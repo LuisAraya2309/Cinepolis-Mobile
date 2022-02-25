@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
 
             while (dataSet?.next() == true){
-                val tipoUsuario : String = dataSet.getString(1)
+                val tipoUsuario : String = dataSet.getString(2)
                 Toast.makeText(this,tipoUsuario,Toast.LENGTH_LONG).show()
             }
 

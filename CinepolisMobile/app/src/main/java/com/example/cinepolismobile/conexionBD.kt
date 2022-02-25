@@ -13,7 +13,7 @@ import java.sql.SQLException
 class ConexionBD {
     //Atributo de tipo Conexion
     val ip = "10.0.2.2"
-    val database = "CinepolisDB"
+    val database = "CinepolisBD"
     val username = "sa"
     val password = "admin"
 
@@ -24,7 +24,7 @@ class ConexionBD {
         val stringConexion : String
         try{
             Class.forName("net.sourceforge.jtds.jdbc.Driver")
-            stringConexion = "jdbc:jtds:sqlserver://$ip;databaseName=$database;username=$username;password=$password"
+            stringConexion = "jdbc:jtds:sqlserver://$ip;databaseName=$database;user=$username;password=$password"
             conexion = DriverManager.getConnection(stringConexion)
 
         }catch (ex:SQLException){
