@@ -24,20 +24,21 @@ class MainActivity : AppCompatActivity() {
         //Funcion del boton de iniciar sesion
         iniciarSesion!!.setOnClickListener{
             val objConexion : Connection? = conexionBase.conectarDB()  //Crear el objeto conexion
-            objConexion?.close()
-            /*
+
+
             val consulta = "SELECT * FROM dbo.TipoUsuarios"   //Escribir la consulta
             val iniciarConexion :PreparedStatement? = conexionBase.prepararConsulta(objConexion,consulta)
 
             //Preparar los parametros de la consulta si es necesario con sets
             val dataSet : ResultSet? = iniciarConexion?.executeQuery()
-               */
-            /*
+
+
             while (dataSet?.next() == true){
                 val tipoUsuario : String = dataSet.getString(1)
                 Toast.makeText(this,tipoUsuario,Toast.LENGTH_LONG).show()
             }
-            */
+
+            objConexion?.close()
 
 
 
