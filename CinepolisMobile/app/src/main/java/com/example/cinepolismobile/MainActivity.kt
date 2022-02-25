@@ -4,12 +4,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
+import java.sql.Connection
 import java.sql.PreparedStatement
+import java.sql.ResultSet
 
 class MainActivity : AppCompatActivity() {
 
-    var iniciarSesion : Button ? = null;
-    var conexionBase = conexionBD()
+    private var iniciarSesion : Button ? = null
+    private var conexionBase = ConexionBD()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,18 +19,28 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //Asociar boton de inicio de sesion
-        iniciarSesion = findViewById(R.id.iniciosesion);
+        iniciarSesion = findViewById(R.id.iniciosesion)
 
         //Funcion del boton de iniciar sesion
         iniciarSesion!!.setOnClickListener{
-            var objConexion = conexionBase.conectarDB()  //Crear el objeto conexion
-            var consulta = "";                           //EScribir la consulta
-            //
-            var iniciarConexion :PreparedStatement = conexionBase.prepararConsulta(objConexion,consulta)
-            //Preparar los parametros de la consulta
+            val objConexion : Connection? = conexionBase.conectarDB()  //Crear el objeto conexion
+            objConexion?.close()
+            /*
+            val consulta = "SELECT * FROM dbo.TipoUsuarios"   //Escribir la consulta
+            val iniciarConexion :PreparedStatement? = conexionBase.prepararConsulta(objConexion,consulta)
+
+            //Preparar los parametros de la consulta si es necesario con sets
+            val dataSet : ResultSet? = iniciarConexion?.executeQuery()
+               */
+            /*
+            while (dataSet?.next() == true){
+                val tipoUsuario : String = dataSet.getString(1)
+                Toast.makeText(this,tipoUsuario,Toast.LENGTH_LONG).show()
+            }
+            */
 
 
-            Toast.makeText(this,"Iniciando Sesión",Toast.LENGTH_LONG).show();
+
         }
 
 
