@@ -25,6 +25,9 @@ class MainActivity : AppCompatActivity() {
         //Asociar boton de inicio de sesion
         iniciarSesion = findViewById(R.id.iniciosesion)
 
+        //Asociar boton de crear cuenta
+
+
         //Funcion del boton de iniciar sesion
         iniciarSesion!!.setOnClickListener{
             //Instanciar el objeto conexion
@@ -44,8 +47,7 @@ class MainActivity : AppCompatActivity() {
             val dataSet : ResultSet? = iniciarConexion?.executeQuery()
             var tipoUsuario: Int?
             var idUsuario : Int = 0;
-            //Toast.makeText(this,"Bienvenido ${dataSet?.toString()}",Toast.LENGTH_LONG).show()
-            println(emailUsuario + passwordUsuario)
+
             if (dataSet!!.next()){   //Si el dataset es nulo, las credenciales son incorrectas
                 idUsuario = dataSet.getInt(1)
                 tipoUsuario = dataSet.getInt(2)
