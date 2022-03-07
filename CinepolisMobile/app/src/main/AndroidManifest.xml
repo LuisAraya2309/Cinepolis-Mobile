@@ -17,7 +17,7 @@
             android:name=".Dashboardusuario"
             android:exported="false" />
         <activity
-            android:name=".registrarcuenta"
+            android:name=".RegistrarCuenta"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
