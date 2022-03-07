@@ -32,6 +32,8 @@ class MainActivity : AppCompatActivity() {
 
         //Asociar boton de crear cuenta
 
+        val dashboardPrincipal : Intent = Intent(this,RegistrarCuenta::class.java)
+        startActivity(dashboardPrincipal)
 
         //Funcion del boton de iniciar sesion
         iniciarSesion!!.setOnClickListener{
@@ -59,7 +61,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this,"¡Bienvenido!",Toast.LENGTH_LONG).show()
 
                 //Pasar a la siguiente interfaz
-                val dashboardPrincipal : Intent = Intent(this,RegistrarCuenta::class.java)
+                val dashboardPrincipal : Intent = Intent(this,Dashboardusuario::class.java)
                 startActivity(dashboardPrincipal)
             }
             else{

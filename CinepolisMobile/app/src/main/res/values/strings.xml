@@ -2,6 +2,7 @@
     <string name="app_name">CinepolisMobile</string>
     <string-array name="EsquemaV">
         <item>Primera dosis</item>
+        <item>Segunda dosis</item>
         <item>Esquema completo</item>
     </string-array>
 </resources>
