@@ -1,6 +1,7 @@
 package com.example.cinepolismobile
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -52,6 +53,10 @@ class MainActivity : AppCompatActivity() {
                 idUsuario = dataSet.getInt(1)
                 tipoUsuario = dataSet.getInt(2)
                 Toast.makeText(this,"¡Bienvenido!",Toast.LENGTH_LONG).show()
+
+                //Pasar a la siguiente interfaz
+                val dashboardPrincipal : Intent = Intent(this,Dashboardusuario::class.java)
+                startActivity(dashboardPrincipal)
             }
             else{
                 Toast.makeText(this,"Credenciales incorrectas",Toast.LENGTH_LONG).show()

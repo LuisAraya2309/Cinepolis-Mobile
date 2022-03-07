@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CinepolisMobile">
         <activity
+            android:name=".Dashboardusuario"
+            android:exported="false" />
+        <activity
             android:name=".registrarcuenta"
             android:exported="false" />
         <activity
