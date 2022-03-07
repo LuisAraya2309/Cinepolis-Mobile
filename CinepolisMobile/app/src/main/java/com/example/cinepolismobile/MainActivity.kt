@@ -18,12 +18,8 @@ import java.util.*
 class MainActivity : AppCompatActivity() {
 
     private var iniciarSesion : Button ? = null
+
     private var conexionBase = ConexionBD()
-    private lateinit var tvDatePicker : TextView
-    private lateinit var ivDatePicker: ImageView
-
-
-
 
 
 
@@ -63,7 +59,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this,"¡Bienvenido!",Toast.LENGTH_LONG).show()
 
                 //Pasar a la siguiente interfaz
-                val dashboardPrincipal : Intent = Intent(this,Dashboardusuario::class.java)
+                val dashboardPrincipal : Intent = Intent(this,RegistrarCuenta::class.java)
                 startActivity(dashboardPrincipal)
             }
             else{
@@ -75,29 +71,10 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        tvDatePicker = findViewById(R.id.verFecha)
-        ivDatePicker = findViewById(R.id.calendario)
 
-        val calendario = Calendar.getInstance()
-
-        val datePicker = DatePickerDialog.OnDateSetListener {vista, año, mes, dia ->
-            calendario.set(Calendar.YEAR,año)
-            calendario.set(Calendar.MONTH,mes)
-            calendario.set(Calendar.DAY_OF_MONTH,dia)
-            updateLable(calendario)
-        }
-
-        ivDatePicker.setOnClickListener {
-            DatePickerDialog(this, datePicker, calendario.get(Calendar.YEAR),calendario.get(Calendar.MONTH),
-                calendario.get(Calendar.DAY_OF_MONTH)).show()
-        }
 
     }
-    private fun updateLable( calendario : Calendar){
-        val formato = "dd-MM-yyyy"
-        val sdf = SimpleDateFormat(formato,Locale.US)
-        tvDatePicker.setText(sdf.format(calendario.time))
-    }
+
 
 
 }
