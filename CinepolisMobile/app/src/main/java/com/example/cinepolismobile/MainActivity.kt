@@ -1,22 +1,30 @@
 package com.example.cinepolismobile
 
 
+import android.app.DatePickerDialog
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import java.sql.Connection
 import java.sql.PreparedStatement
 import java.sql.ResultSet
+import java.text.SimpleDateFormat
+import java.time.Year
+import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
 
     private var iniciarSesion : Button ? = null
     private var conexionBase = ConexionBD()
+    private lateinit var tvDatePicker : TextView
+    private lateinit var ivDatePicker: ImageView
+
+
+
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -62,14 +70,33 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this,"Credenciales incorrectas",Toast.LENGTH_LONG).show()
             }
 
-
             //Cerrar la conexion
             objConexion?.close()
 
-
         }
 
+        tvDatePicker = findViewById(R.id.verFecha)
+        ivDatePicker = findViewById(R.id.calendario)
 
+        val calendario = Calendar.getInstance()
+
+        val datePicker = DatePickerDialog.OnDateSetListener {vista, año, mes, dia ->
+            calendario.set(Calendar.YEAR,año)
+            calendario.set(Calendar.MONTH,mes)
+            calendario.set(Calendar.DAY_OF_MONTH,dia)
+            updateLable(calendario)
+        }
+
+        ivDatePicker.setOnClickListener {
+            DatePickerDialog(this, datePicker, calendario.get(Calendar.YEAR),calendario.get(Calendar.MONTH),
+                calendario.get(Calendar.DAY_OF_MONTH)).show()
+        }
+
+    }
+    private fun updateLable( calendario : Calendar){
+        val formato = "dd-MM-yyyy"
+        val sdf = SimpleDateFormat(formato,Locale.US)
+        tvDatePicker.setText(sdf.format(calendario.time))
     }
 
 
