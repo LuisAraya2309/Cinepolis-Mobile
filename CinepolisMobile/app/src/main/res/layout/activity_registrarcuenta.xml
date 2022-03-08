@@ -23,7 +23,7 @@
         app:srcCompat="@drawable/login" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/correoElectronico"
         android:layout_width="318dp"
         android:layout_height="50dp"
         android:background="@drawable/text_rounded_border"
@@ -162,7 +162,7 @@
         app:layout_constraintVertical_bias="0.848" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/crearCuenta"
         android:layout_width="318dp"
         android:layout_height="50dp"
         android:text="Crear cuenta"

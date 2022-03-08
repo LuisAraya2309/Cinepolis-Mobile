@@ -18,6 +18,7 @@ import java.util.*
 class MainActivity : AppCompatActivity() {
 
     private var iniciarSesion : Button ? = null
+    private var registrarCuenta: Button ? = null
 
     private var conexionBase = ConexionBD()
 
@@ -29,11 +30,13 @@ class MainActivity : AppCompatActivity() {
 
         //Asociar boton de inicio de sesion
         iniciarSesion = findViewById(R.id.iniciosesion)
+        registrarCuenta = findViewById(R.id.button3)
 
         //Asociar boton de crear cuenta
-
-        val dashboardPrincipal : Intent = Intent(this,RegistrarCuenta::class.java)
-        startActivity(dashboardPrincipal)
+        registrarCuenta!!.setOnClickListener{
+            val dashboardPrincipal : Intent = Intent(this,RegistrarCuenta::class.java)
+            startActivity(dashboardPrincipal)
+        }
 
         //Funcion del boton de iniciar sesion
         iniciarSesion!!.setOnClickListener{
