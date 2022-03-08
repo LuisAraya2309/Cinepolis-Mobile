@@ -65,7 +65,9 @@
                     android:padding="16dp"
                     android:gravity="center">
 
+
                     <ImageView
+                        android:id="@+id/cartelera"
                         android:src="@drawable/estrellacinepolis"
                         android:layout_width="80dp"
                         android:layout_height="80dp"/>
@@ -101,6 +103,7 @@
                     android:gravity="center">
 
                     <ImageView
+                        android:id="@+id/dulceria"
                         android:src="@drawable/palomitas"
                         android:layout_width="80dp"
                         android:layout_height="80dp"/>
@@ -136,6 +139,7 @@
                     android:gravity="center">
 
                     <ImageView
+                        android:id="@+id/carritocompras"
                         android:src="@drawable/carritocompras"
                         android:layout_width="80dp"
                         android:layout_height="80dp"/>
@@ -170,6 +174,7 @@
                     android:gravity="center">
 
                     <ImageView
+                        android:id="@+id/cerrarsesion"
                         android:src="@drawable/cerrarsesion"
                         android:layout_width="80dp"
                         android:layout_height="80dp"/>

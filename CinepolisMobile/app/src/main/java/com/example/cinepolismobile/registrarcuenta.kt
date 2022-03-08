@@ -64,7 +64,7 @@ class RegistrarCuenta : AppCompatActivity() {
             val fechaNacimientoUsuario = LocalDate.parse(fechaUsuario, DateTimeFormatter.ISO_DATE)
             val esquemaUsuario: String = (findViewById<View>(R.id.esquemaVacunacion) as Spinner).selectedItem.toString()
 
-
+            /*
             //Escribir la consulta
             val consulta = "EXECUTE sp_InicioSesion ?,?"
             val iniciarConexion : PreparedStatement? = conexionBase.prepararConsulta(objConexion,consulta)
@@ -91,6 +91,8 @@ class RegistrarCuenta : AppCompatActivity() {
 
             //Cerrar la conexion
             objConexion?.close()
+            */
+
         }
 
     }
