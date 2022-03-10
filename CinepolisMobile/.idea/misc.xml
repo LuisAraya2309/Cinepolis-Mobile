@@ -12,11 +12,16 @@
         <entry key="..\:/Users/Sebastian/Desktop/TEC/VSemestre/Administracion/Proyecto/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_registrarcuenta.xml" value="0.33" />
         <entry key="..\:/Users/Sebastian/Desktop/TEC/VSemestre/Administracion/Proyecto/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/dashboardusuario.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Sebastian/Desktop/TEC/VSemestre/Administracion/Proyecto/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/dropdown_item.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_cartelera.xml" value="0.21603260869565216" />
+        <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/drawable/border_buttom.xml" value="0.1" />
+        <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/drawable/border_top.xml" value="0.1" />
+        <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/drawable/item_cartelera.xml" value="0.1865" />
+        <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_cartelera.xml" value="0.33" />
         <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_main.xml" value="0.3223958333333333" />
         <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_registrarcuenta.xml" value="0.33" />
         <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/dashboardusuario.xml" value="0.33" />
         <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/dropdown_item.xml" value="0.21603260869565216" />
+        <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/item_cartelera.xml" value="0.15625" />
+        <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/list_item_cartelera.xml" value="0.22" />
         <entry key="app/src/main/res/drawable/border_buttom.xml" value="0.3125" />
         <entry key="app/src/main/res/drawable/border_top.xml" value="0.3125" />
         <entry key="app/src/main/res/drawable/buttonLogin.xml" value="0.3125" />

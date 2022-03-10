@@ -196,9 +196,9 @@ Insert into dbo.Pelicula
 	(
 		'Batman',
 		'Matt Reeves',
-		'{1:Andy Serkis, 2:Robert Pattinson, 3:Zoë Kravitz}',
-		'{1:Acción, 2:Aventura}',
-		'{1:Español, 2:Ingles}',
+		'{1:Andy Serkis, 2:Robert Pattinson, 3:Zoï¿½ Kravitz}',
+		'{1:Acciï¿½n, 2:Aventura}',
+		'{1:Espaï¿½ol, 2:Ingles}',
 		2022,
 		176,
 		12,
@@ -209,11 +209,11 @@ SET @imagenPelicula = (SELECT BulkColumn FROM OPENROWSET(BULK 'C:\Users\Sebastia
 Insert into dbo.Pelicula
 	VALUES
 	(
-		'Sing 2: ¡Ven y canta de nuevo!',
+		'Sing 2: ï¿½Ven y canta de nuevo!',
 		'Garth Jennings',
 		'{1:Letitia Wright, 2:Tori Kelly, 3:Bobby Cannavale}',
 		'{1:Infantil, 2:Comedia}',
-		'{1:Español, 2:Ingles}',
+		'{1:Espaï¿½ol, 2:Ingles}',
 		2021,
 		112,
 		0,
@@ -228,7 +228,7 @@ Insert into dbo.Pelicula
 		'Fionn Watts',
 		'{1:William Holstead, 2:Hellen Mackay, 3:Julie Higginson}',
 		'{1:Terror, 2:Suspenso}',
-		'{1:Español, 2:Ingles}',
+		'{1:Espaï¿½ol, 2:Ingles}',
 		2020,
 		87,
 		15,
@@ -242,7 +242,7 @@ Insert into dbo.Pelicula
 		'Belfast',
 		'Kenneth Branagh',
 		'{1:Jamie Dornan, 2:Caitriona Balfe, 3:Judi Dench}',
-		'{1:Drama, 2:Comedia dramática}',
+		'{1:Drama, 2:Comedia dramï¿½tica}',
 		'{1:Ingles}',
 		2022,
 		98,
@@ -269,9 +269,9 @@ INSERT INTO dbo.Usuarios
 	VALUES(
 		'Cristian',
 		'cristiangm2309@gmail.com',
-		'contraseña123',
+		'contraseï¿½a123',
 		1,
-		'Gómez',
+		'Gï¿½mez',
 		'Madrigal'
 
 	)
@@ -280,9 +280,9 @@ INSERT INTO dbo.Usuarios
 	VALUES(
 		'Tatiana',
 		'tatiana292dm@gmail.com',
-		'contraseña123',
+		'contraseï¿½a123',
 		1,
-		'Díaz',
+		'Dï¿½az',
 		'Mora'
 	)
 
@@ -290,7 +290,7 @@ INSERT INTO dbo.Usuarios
 	VALUES(
 		'Juliana',
 		'julianalc01@gmail.com',
-		'contraseña123',
+		'contraseï¿½a123',
 		2,
 		'Leiva',
 		'Coto'
@@ -316,9 +316,9 @@ INSERT INTO dbo.Tarjetas
 
 INSERT INTO dbo.Usuarios 
 	VALUES(
-		'Verónica',
+		'Verï¿½nica',
 		'veroca06es@gmail.com',
-		'contraseña123',
+		'contraseï¿½a123',
 		2,
 		'Castro',
 		'Espinosa'
@@ -346,7 +346,7 @@ INSERT INTO dbo.Usuarios
 	VALUES(
 		'Ignacio',
 		'nachoararo989@gmail.com',
-		'contraseña123',
+		'contraseï¿½a123',
 		2,
 		'Araya',
 		'Robles'
@@ -374,7 +374,7 @@ INSERT INTO dbo.Usuarios
 	VALUES(
 		'Franco',
 		'frantefe777@gmail.com',
-		'contraseña123',
+		'contraseï¿½a123',
 		2,
 		'Fernandez',
 		'Tenorio'

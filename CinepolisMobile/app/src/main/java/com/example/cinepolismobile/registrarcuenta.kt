@@ -111,7 +111,7 @@ class RegistrarCuenta : AppCompatActivity() {
 
             //Cerrar la conexion
             objConexion?.close()
-            */
+
 
         }
 

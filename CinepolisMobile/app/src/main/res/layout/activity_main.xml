@@ -50,6 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:text="¡Bienvenido a Cinépolis!"
+                android:fontFamily="@font/roboto_bold"
                 android:textAlignment="center"
                 android:textSize="24sp"
                 android:textStyle="bold" />
