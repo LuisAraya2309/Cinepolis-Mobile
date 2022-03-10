@@ -1,5 +1,3 @@
-
-
 USE [CinepolisBD]
 GO
 
@@ -8,7 +6,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-ALTER PROCEDURE [dbo].[sp_InicioSesion]
+CREATE PROCEDURE [dbo].[sp_InicioSesion]
 	@inCorreo VARCHAR(64),
 	@inPassword VARCHAR(64)
 	
@@ -23,10 +21,6 @@ BEGIN
 		FROM dbo.Usuarios AS U
 		WHERE @inCorreo = U.CorreoElectronico AND @inPassword = U.Contraseña; 
 
-
-	
-
-	
 
 	SET NOCOUNT OFF;
 END
