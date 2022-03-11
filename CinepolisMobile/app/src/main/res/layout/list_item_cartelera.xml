@@ -1,11 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:tools="http://schemas.android.com/tools"
-    android:background="#022b54"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_item_cartelera"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:textSize="40sp"
-    android:padding="10sp"
-    android:textColor="#FFFFFF"
-    android:fontFamily="@font/roboto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    tools:ignore="MissingDefaultResource" />
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imagen_pelicula"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:src="@drawable/carritocompras" />
+
+    <TextView
+        android:id="@+id/titulo_pelicula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/imagen_pelicula"
+        android:fontFamily="@font/quicksand"
+        android:text="Codigo davinci"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo_pelicula"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/imagen_pelicula"
+        android:fontFamily="@font/quicksand"
+        android:gravity="center"
+        android:text="Dan Brown"
+        android:textSize="15dp" />
+
+
+    <TextView
+        android:id="@+id/año_publicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo_pelicula"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/director"
+        android:fontFamily="@font/quicksand"
+        android:gravity="center"
+        android:text="2002"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/edad_permitida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo_pelicula"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/año_publicacion"
+        android:fontFamily="@font/quicksand"
+        android:gravity="center"
+        android:text="TP18"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/idioma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo_pelicula"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/edad_permitida"
+        android:fontFamily="@font/quicksand"
+        android:gravity="center"
+        android:text="Ingles"
+        android:textSize="15dp" />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

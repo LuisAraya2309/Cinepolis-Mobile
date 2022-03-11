@@ -1,3 +1,4 @@
+
 -- Ingresar tipos de alimentos
 
 Insert into dbo.TipoAlimentos
