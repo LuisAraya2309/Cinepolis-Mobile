@@ -25,20 +25,32 @@ class AdapterPeliculas( var mCtx: Context, var resources:Int, var listaPeliculas
         val edad_permitida = view.findViewById<TextView>(R.id.edad_permitida)
         val idioma = view.findViewById<TextView>(R.id.idioma)
 
-
         /*
-        var streamBinario : InputStream? = listaPeliculas[position].imagen
-        var imagenBinaria : Bitmap
-        imagenBinaria = BitmapFactory.decodeStream(streamBinario)
-         */
+        try{
+            var streamBinario : InputStream? = listaPeliculas[position].imagen
+             var opciones  = Options()
+             opciones.inJustDecodeBounds = true
 
+            var imagenBinaria : Bitmap
+            imagenBinaria = BitmapFactory.decodeStream(streamBinario,null,opciones)!!
+        }catch(e:Exception){
+
+        }
+        */
         imagenPelicula.setImageResource(R.drawable.jarvissd)
-
         titulo.text = listaPeliculas[position].titulo
         director.text = listaPeliculas[position].director
         publicacion.text = listaPeliculas[position].añoPublicacion
         edad_permitida.text = listaPeliculas[position].edadRequerida
-        idioma.text = listaPeliculas[position].idioma
+        var listaIdiomas:String = listaPeliculas[position].idioma
+        var idiomasParseados = listaIdiomas.split(',')
+        if(idiomasParseados.size>1){
+            idioma.text = "SUB"
+        }
+        else{
+            idioma.text = "DOB"
+        }
+
 
         return view
     }

@@ -1,5 +1,6 @@
 package com.example.cinepolismobile
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
@@ -14,21 +15,30 @@ class Cartelera : AppCompatActivity() {
         carteleraPeliculas  = findViewById<ListView>(R.id.cartelerapeliculas)
 
         val listaPeliculas = obtenerPelículas()  //Se obtienen las peliculas de la base de datos
-        println(listaPeliculas)
+
 
         carteleraPeliculas!!.adapter = AdapterPeliculas(this,R.layout.list_item_cartelera,listaPeliculas)
 
 
-        /*
+
         carteleraPeliculas!!.setOnItemClickListener{parent,view,position,id ->
             //Se recolecta la pelicula escogida y se inicia la interfaz de agregar boletos
             val peliculaSeleccionada = listaPeliculas[position].titulo // Esta entrando una pelicula o un string
-            val pasarAgregarBoletos = Intent(this,Boletos::class.java)
+            var listaIdiomas:String = listaPeliculas[position].idioma
+            var idiomaSeleccionado =""
+            var idiomasParseados = listaIdiomas.split(',')
+            if(idiomasParseados.size>1){
+                idiomaSeleccionado = "SUB"
+            }
+            else{
+                idiomaSeleccionado = "DOB"
+            }
+            val pasarAgregarBoletos : Intent = Intent(this,Boletos::class.java)
             pasarAgregarBoletos.putExtra("pelicula",peliculaSeleccionada)
-            //Iniciamos la actividad con el parametro de la pelicula
+            pasarAgregarBoletos.putExtra("idioma",idiomaSeleccionado)
             startActivity(pasarAgregarBoletos)
         }
-            */
+
 
 
     }
@@ -46,7 +56,7 @@ class Cartelera : AppCompatActivity() {
                 "FROM dbo.Pelicula AS P\n" +
                 "INNER JOIN dbo.Funciones AS F\n" +
                 "ON F.IdPelicula = P.Id\n" +
-                "WHERE F.Fecha = (CONVERT(DATE,GETDATE()))"
+                "WHERE F.Fecha = '2022-03-10'"   //(CONVERT(DATE,GETDATE()))
         val iniciarConexion : PreparedStatement? = conexionBD.prepararConsulta(objConexion,consulta)
         val dataSet  = iniciarConexion?.executeQuery()
         val listaPeliculas = dataSet.use {
