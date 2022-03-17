@@ -5,5 +5,13 @@
         <item>Segunda dosis</item>
         <item>Esquema completo</item>
     </string-array>
+
+    <string name="Administrador"><u>Administrador</u></string>
+
+    <string-array name="TiposAlimentos">
+        <item>Bebidas</item>
+        <item>Dulces</item>
+        <item>Aperitivos</item>
+    </string-array>
 </resources>
 

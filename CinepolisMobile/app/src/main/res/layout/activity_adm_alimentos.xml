@@ -25,7 +25,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nuestros Productos"
+                android:text="@string/Administrador"
                 android:textAlignment="center"
                 android:textColor="#FFF"
                 android:textSize="26dp">
@@ -68,7 +68,7 @@
 
                     <ImageView
                         android:id="@+id/cartelera"
-                        android:src="@drawable/estrellacinepolis"
+                        android:src="@drawable/agregar"
                         android:layout_width="80dp"
                         android:layout_height="80dp"/>
                     <TextView
@@ -76,9 +76,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:textColor="#000"
-                        android:text="Cartelera"/>
-
-
+                        android:text="Agregar alimento"/>
 
                 </LinearLayout>
 
@@ -104,7 +102,7 @@
 
                     <ImageView
                         android:id="@+id/dulceria"
-                        android:src="@drawable/palomitas"
+                        android:src="@drawable/modificar"
                         android:layout_width="80dp"
                         android:layout_height="80dp"/>
                     <TextView
@@ -112,7 +110,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:textColor="#000"
-                        android:text="Dulcería"/>
+                        android:text="Modificar"/>
 
 
 
@@ -123,33 +121,33 @@
 
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="110dp"
                 android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                app:cardElevation="6dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
                 app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
+                app:cardElevation="6dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:gravity="center"
                     android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center">
+                    android:padding="16dp">
 
                     <ImageView
                         android:id="@+id/carritocompras"
-                        android:src="@drawable/carritocompras"
                         android:layout_width="80dp"
-                        android:layout_height="80dp"/>
+                        android:layout_height="80dp"
+                        android:src="@drawable/eliminar" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:textColor="#000"
-                        android:text="Carrito"/>
-
+                        android:text="Eliminar"
+                        android:textColor="#000" />
 
 
                 </LinearLayout>
@@ -175,16 +173,15 @@
 
                     <ImageView
                         android:id="@+id/cerrarsesion"
-                        android:src="@drawable/tarjetas"
+                        android:src="@drawable/cerrarsesion"
                         android:layout_width="80dp"
                         android:layout_height="80dp"/>
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="Agregar metódo \n        de pago"
-                        android:textColor="#000" />
+                        android:textColor="#000"
+                        android:text="Regresar"/>
 
 
 

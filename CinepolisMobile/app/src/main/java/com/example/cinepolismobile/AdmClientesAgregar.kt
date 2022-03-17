@@ -17,7 +17,7 @@ import java.time.format.DateTimeFormatter
 import java.util.*
 
 
-class RegistrarCuenta : AppCompatActivity() {
+class AdmClientesAgregar : AppCompatActivity() {
 
     private lateinit var tvSeleccionarFecha : TextView
     private lateinit var ivSeleccionarFecha: ImageView
@@ -28,7 +28,7 @@ class RegistrarCuenta : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_registrarcuenta)
+        setContentView(R.layout.activity_adm_clientes_agregar)
 
 
         tvSeleccionarFecha = findViewById(R.id.verFecha)
@@ -115,7 +115,6 @@ class RegistrarCuenta : AppCompatActivity() {
             //Cerrar la conexion
             objConexion?.close()
         }
-
     }
 
     private fun updateLable( calendario : Calendar){

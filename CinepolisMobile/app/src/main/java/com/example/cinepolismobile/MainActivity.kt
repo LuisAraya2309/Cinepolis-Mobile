@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
         //Asociar boton de crear cuenta
         registrarCuenta!!.setOnClickListener{
-            val registrar : Intent = Intent(this,RegistrarCuenta::class.java)
+            val registrar : Intent = Intent(this,AdmClientesEliminar::class.java)
             startActivity(registrar)
         }
 
@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this,"¡Bienvenido!",Toast.LENGTH_LONG).show()
 
                 //Pasar a la siguiente interfaz
-                val dashboardPrincipal : Intent = Intent(this,Cartelera::class.java)
+                val dashboardPrincipal : Intent = Intent(this,Dashboardusuario::class.java)
                 startActivity(dashboardPrincipal)
             }
             else{
@@ -75,9 +75,6 @@ class MainActivity : AppCompatActivity() {
             objConexion?.close()
 
         }
-
-
-
     }
 
 

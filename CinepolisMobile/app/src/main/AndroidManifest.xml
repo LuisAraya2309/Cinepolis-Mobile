@@ -26,8 +26,31 @@
             android:name=".RegistrarCuenta"
             android:exported="false" />
         <activity
+            android:name=".AdmAlimentosAgregar"
+            android:exported="true"/>
+        <activity
+            android:name=".AdmAlimentosModificar"
+            android:exported="true"/>
+        <activity
+            android:name=".AdmAlimentosEliminar"
+            android:exported="true"/>
+        <activity
+            android:name=".AdmClientesAgregar"
+            android:exported="true"/>
+        <activity
+            android:name=".AdmClientesModificar"
+            android:exported="true"/>
+        <activity
+            android:name=".AdmClientesEliminar"
+            android:exported="true"/>
+        <activity
+            android:name=".AgregarTarjeta"
+            android:exported="true"/>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
