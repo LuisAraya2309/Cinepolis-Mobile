@@ -8,7 +8,9 @@ class Pelicula(
     val añoPublicacion:String,
     val edadRequerida:String,
     val idioma:String,
-    val imagen: InputStream
+    val imagen: InputStream,
+    val idPelicula:Int,
+    val hora:String
 ) {
 
 }

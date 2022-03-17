@@ -39,7 +39,7 @@ class AdapterPeliculas( var mCtx: Context, var resources:Int, var listaPeliculas
         */
         imagenPelicula.setImageResource(R.drawable.jarvissd)
         titulo.text = listaPeliculas[position].titulo
-        director.text = listaPeliculas[position].director
+        director.text = listaPeliculas[position].hora
         publicacion.text = listaPeliculas[position].añoPublicacion
         edad_permitida.text = listaPeliculas[position].edadRequerida
         var listaIdiomas:String = listaPeliculas[position].idioma

@@ -27,6 +27,7 @@ class Boletos : AppCompatActivity() {
     private lateinit var seleccionarasientos : Button
 
     private var totalAsientos : Int = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_boletos)
@@ -57,6 +58,8 @@ class Boletos : AppCompatActivity() {
 
         val pelicula = intent.extras?.getString("pelicula")
         val idioma = intent.extras?.getString("idioma")
+        val idPelicula = intent.extras?.getInt("idPelicula")
+        val horaFuncion = intent.extras?.getString("horaFuncion")
         peliculaSeleccionada.text = pelicula.toString()
         idiomaSeleccionado.text = idioma.toString()
 
@@ -104,15 +107,13 @@ class Boletos : AppCompatActivity() {
             var pasarSeleccion : Intent = Intent(this,Seleccion::class.java)
             pasarSeleccion.putExtra("pelicula",pelicula)
             pasarSeleccion.putExtra("idioma",idioma)
+            pasarSeleccion.putExtra("idPelicula",idPelicula)
+            pasarSeleccion.putExtra("horaFuncion",horaFuncion)
             pasarSeleccion.putExtra("cantidadAsientos",totalAsientos)
             pasarSeleccion.putExtra("costoTotal",totalplatas.text.toString().toInt())
+
             startActivity(pasarSeleccion)
         }
-
-
-
-
-
 
     }
 }

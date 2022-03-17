@@ -25,6 +25,8 @@ class Cartelera : AppCompatActivity() {
             //Se recolecta la pelicula escogida y se inicia la interfaz de agregar boletos
             val peliculaSeleccionada = listaPeliculas[position].titulo // Esta entrando una pelicula o un string
             var listaIdiomas:String = listaPeliculas[position].idioma
+            val idPelicula : Int = listaPeliculas[position].idPelicula
+            val horaFuncion : String = listaPeliculas[position].hora
             var idiomaSeleccionado =""
             var idiomasParseados = listaIdiomas.split(',')
             if(idiomasParseados.size>1){
@@ -36,6 +38,8 @@ class Cartelera : AppCompatActivity() {
             val pasarAgregarBoletos : Intent = Intent(this,Boletos::class.java)
             pasarAgregarBoletos.putExtra("pelicula",peliculaSeleccionada)
             pasarAgregarBoletos.putExtra("idioma",idiomaSeleccionado)
+            pasarAgregarBoletos.putExtra("idPelicula",idPelicula)
+            pasarAgregarBoletos.putExtra("horaFuncion",horaFuncion)
             startActivity(pasarAgregarBoletos)
         }
 
@@ -52,7 +56,9 @@ class Cartelera : AppCompatActivity() {
                 "\tP.AñoPublicacion,\n" +
                 "\tP.EdadRequerida,\n" +
                 "\tP.Idiomas,\n" +
-                "\tP.Imagen\n" +
+                "\tP.Imagen,\n" +
+                "\tP.Id,\n" +
+                "\tF.Hora\n" +
                 "FROM dbo.Pelicula AS P\n" +
                 "INNER JOIN dbo.Funciones AS F\n" +
                 "ON F.IdPelicula = P.Id\n" +
@@ -62,7 +68,7 @@ class Cartelera : AppCompatActivity() {
         val listaPeliculas = dataSet.use {
             generateSequence {
                 if (dataSet!!.next()){
-                    Pelicula(dataSet.getString(1), dataSet.getString(2), dataSet.getString(3), dataSet.getString(4), dataSet.getString(5),dataSet.getBinaryStream(6))
+                    Pelicula(dataSet.getString(1), dataSet.getString(2), dataSet.getString(3), dataSet.getString(4), dataSet.getString(5),dataSet.getBinaryStream(6),dataSet.getInt(7),dataSet.getString(8))
                 }  else{
                     null
                 }

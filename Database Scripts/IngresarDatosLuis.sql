@@ -199,9 +199,9 @@ Insert into dbo.Pelicula
 	(
 		'Batman',
 		'Matt Reeves',
-		'{1:Andy Serkis, 2:Robert Pattinson, 3:Zoé Kravitz}',
-		'{1:Acción, 2:Aventura}',
-		'{1:Español, 2:Inglés}',
+		'1:Andy Serkis, 2:Robert Pattinson, 3:Zoé Kravitz',
+		'1:Acción, 2:Aventura',
+		'1:Español, 2:Inglés',
 		2022,
 		176,
 		12,
@@ -214,9 +214,9 @@ Insert into dbo.Pelicula
 	(
 		'Sing 2: ¡Ven y canta de nuevo!',
 		'Garth Jennings',
-		'{1:Letitia Wright, 2:Tori Kelly, 3:Bobby Cannavale}',
-		'{1:Infantil, 2:Comedia}',
-		'{1:Español, 2:Ingles}',
+		'1:Letitia Wright, 2:Tori Kelly, 3:Bobby Cannavale',
+		'1:Infantil, 2:Comedia',
+		'1:Español, 2:Ingles',
 		2021,
 		112,
 		0,
@@ -229,9 +229,9 @@ Insert into dbo.Pelicula
 	(
 		'Castillo Maldito',
 		'Fionn Watts',
-		'{1:William Holstead, 2:Hellen Mackay, 3:Julie Higginson}',
-		'{1:Terror, 2:Suspenso}',
-		'{1:Español, 2:Ingles}',
+		'1:William Holstead, 2:Hellen Mackay, 3:Julie Higginson',
+		'1:Terror, 2:Suspenso',
+		'1:Español, 2:Ingles',
 		2020,
 		87,
 		15,
@@ -244,9 +244,9 @@ Insert into dbo.Pelicula
 	(
 		'Belfast',
 		'Kenneth Branagh',
-		'{1:Jamie Dornan, 2:Caitriona Balfe, 3:Judi Dench}',
-		'{1:Drama, 2:Comedia dramática}',
-		'{1:Inglés}',
+		'1:Jamie Dornan, 2:Caitriona Balfe, 3:Judi Dench',
+		'1:Drama, 2:Comedia dramática',
+		'1:Inglés',
 		2022,
 		98,
 		0,
@@ -408,7 +408,7 @@ INSERT INTO dbo.Funciones
 		1,
 		'2022-03-10',
 		'12:00',
-		'{1:i2, 2:i3, 3:d9, 4:d8, 5:d7}'
+		'1:i2, 2:i3, 3:d9, 4:d8, 5:d7'
 	)
 
 INSERT INTO dbo.Funciones
@@ -417,7 +417,7 @@ INSERT INTO dbo.Funciones
 		1,
 		'2022-03-10',
 		'14:30',
-		'{1:h5, 2:i3, 3:e11, 4:e10, 5:f4}'
+		'1:h5, 2:i3, 3:e11, 4:e10, 5:f4'
 	)
 
 INSERT INTO dbo.Funciones
@@ -426,7 +426,7 @@ INSERT INTO dbo.Funciones
 		1,
 		'2022-03-10',
 		'16:45',
-		'{1:c5, 2:g11, 3:g12, 4:g13, 5:g14}'
+		'1:c5, 2:g11, 3:g12, 4:g13, 5:g14'
 	)
 
 
@@ -436,7 +436,7 @@ INSERT INTO dbo.Funciones
 		1,
 		'2022-03-10',
 		'19:00',
-		'{1:h3, 2:h6, 3:h7, 4:d8, 5:d7}'
+		'1:h3, 2:h6, 3:h7, 4:d8, 5:d7'
 	)
 
 --Segunda pelicula
@@ -446,7 +446,7 @@ INSERT INTO dbo.Funciones
 		2,
 		'2022-03-10',
 		'12:45',
-		'{1:c5, 2:g11, 3:g12, 4:g13, 5:g14}'
+		'1:c5, 2:g11, 3:g12, 4:g13, 5:g14'
 	)
 
 INSERT INTO dbo.Funciones
@@ -455,7 +455,7 @@ INSERT INTO dbo.Funciones
 		2,
 		'2022-03-10',
 		'14:00',
-		'{1:h3, 2:h6, 3:h7, 4:d8, 5:d7}'
+		'1:h3, 2:h6, 3:h7, 4:d8, 5:d7'
 	)
 
 INSERT INTO dbo.Funciones
@@ -464,7 +464,7 @@ INSERT INTO dbo.Funciones
 		2,
 		'2022-03-10',
 		'15:00',
-		'{1:i2, 2:i3, 3:d9, 4:d8, 5:d7}'
+		'1:i2, 2:i3, 3:d9, 4:d8, 5:d7'
 	)
 
 
@@ -475,7 +475,7 @@ INSERT INTO dbo.Funciones
 		2,
 		'2022-03-10',
 		'17:30',
-		'{1:h5, 2:i3, 3:e11, 4:e10, 5:f4}'
+		'1:h5, 2:i3, 3:e11, 4:e10, 5:f4'
 	)
 
 --Tercera pelicula
@@ -486,7 +486,7 @@ INSERT INTO dbo.Funciones
 		3,
 		'2022-03-10',
 		'12:00',
-		'{1:h3, 2:h6, 3:h7, 4:d8, 5:d7}'
+		'1:h3, 2:h6, 3:h7, 4:d8, 5:d7'
 	)
 
 INSERT INTO dbo.Funciones
@@ -495,7 +495,7 @@ INSERT INTO dbo.Funciones
 		3,
 		'2022-03-10',
 		'14:00',
-		'{1:i2, 2:i3, 3:d9, 4:d8, 5:d7}'
+		'1:i2, 2:i3, 3:d9, 4:d8, 5:d7'
 	)
 
 INSERT INTO dbo.Funciones
@@ -504,7 +504,7 @@ INSERT INTO dbo.Funciones
 		3,
 		'2022-03-10',
 		'15:00',
-		'{1:c5, 2:g11, 3:g12, 4:g13, 5:g14}'
+		'1:c5, 2:g11, 3:g12, 4:g13, 5:g14'
 	)
 
 
@@ -514,7 +514,7 @@ INSERT INTO dbo.Funciones
 		3,
 		'2022-03-10',
 		'20:00',
-		'{1:h5, 2:i3, 3:e11, 4:e10, 5:f4}'
+		'1:h5, 2:i3, 3:e11, 4:e10, 5:f4'
 	)
 
 --Cuarta pelicula
@@ -525,7 +525,7 @@ INSERT INTO dbo.Funciones
 		4,
 		'2022-03-10',
 		'12:00',
-		'{1:h3, 2:h6, 3:h7, 4:d8, 5:d7}'
+		'1:h3, 2:h6, 3:h7, 4:d8, 5:d7'
 	)
 
 INSERT INTO dbo.Funciones
@@ -534,7 +534,7 @@ INSERT INTO dbo.Funciones
 		4,
 		'2022-03-10',
 		'14:00',
-		'{1:i2, 2:i3, 3:d9, 4:d8, 5:d7}'
+		'1:i2, 2:i3, 3:d9, 4:d8, 5:d7'
 	)
 
 INSERT INTO dbo.Funciones
@@ -543,7 +543,7 @@ INSERT INTO dbo.Funciones
 		4,
 		'2022-03-10',
 		'16:00',
-		'{1:c5, 2:g11, 3:g12, 4:g13, 5:g14}'
+		'1:c5, 2:g11, 3:g12, 4:g13, 5:g14'
 	)
 
 
@@ -553,5 +553,5 @@ INSERT INTO dbo.Funciones
 		4,
 		'2022-03-10',
 		'18:00',
-		'{1:h5, 2:i3, 3:e11, 4:e10, 5:f4}'
+		'1:h5, 2:i3, 3:e11, 4:e10, 5:f4'
 	)
