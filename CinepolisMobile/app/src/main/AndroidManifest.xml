@@ -14,6 +14,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CinepolisMobile">
         <activity
+            android:name=".AdmEditarCartelera"
+            android:exported="false" />
+        <activity
+            android:name=".AdmCarteleraEliminar"
+            android:exported="false" />
+        <activity
+            android:name=".AdmAgregarCartelera"
+            android:exported="false" />
+        <activity
+            android:name=".AdmCarteleraGeneral"
+            android:exported="false" />
+        <activity
             android:name=".Seleccion"
             android:exported="false" />
         <activity
@@ -30,30 +42,28 @@
             android:exported="false" />
         <activity
             android:name=".AdmAlimentosAgregar"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".AdmAlimentosModificar"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".AdmAlimentosEliminar"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".AdmClientesAgregar"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".AdmClientesModificar"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".AdmClientesEliminar"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".AgregarTarjeta"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

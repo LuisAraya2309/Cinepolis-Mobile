@@ -7,26 +7,23 @@
         <entry key="..\:/Users/Sebastian/Desktop/TEC/VSemestre/Administracion/Proyecto/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/drawable/border_frame.xml" value="0.3675" />
         <entry key="..\:/Users/Sebastian/Desktop/TEC/VSemestre/Administracion/Proyecto/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/drawable/buttonLogin.xml" value="0.1" />
         <entry key="..\:/Users/Sebastian/Desktop/TEC/VSemestre/Administracion/Proyecto/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/drawable/text_rounded_border.xml" value="0.333" />
-        <entry key="..\:/Users/Sebastian/Desktop/TEC/VSemestre/Administracion/Proyecto/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_adm_alimentos.xml" value="0.33" />
-        <entry key="..\:/Users/Sebastian/Desktop/TEC/VSemestre/Administracion/Proyecto/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_adm_alimentos_agregar.xml" value="0.33" />
-        <entry key="..\:/Users/Sebastian/Desktop/TEC/VSemestre/Administracion/Proyecto/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_adm_alimentos_eliminar.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Sebastian/Desktop/TEC/VSemestre/Administracion/Proyecto/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_adm_alimentos_modificar.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Sebastian/Desktop/TEC/VSemestre/Administracion/Proyecto/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_adm_clientes_agregar.xml" value="0.33" />
-        <entry key="..\:/Users/Sebastian/Desktop/TEC/VSemestre/Administracion/Proyecto/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_adm_clientes_eliminar.xml" value="0.33" />
-        <entry key="..\:/Users/Sebastian/Desktop/TEC/VSemestre/Administracion/Proyecto/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_adm_clientes_modificar.xml" value="0.33" />
-        <entry key="..\:/Users/Sebastian/Desktop/TEC/VSemestre/Administracion/Proyecto/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_agregartarjeta.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Sebastian/Desktop/TEC/VSemestre/Administracion/Proyecto/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_carrito.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Sebastian/Desktop/TEC/VSemestre/Administracion/Proyecto/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_cartelera.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Sebastian/Desktop/TEC/VSemestre/Administracion/Proyecto/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/Sebastian/Desktop/TEC/VSemestre/Administracion/Proyecto/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_registrarcuenta.xml" value="0.33" />
         <entry key="..\:/Users/Sebastian/Desktop/TEC/VSemestre/Administracion/Proyecto/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/dashboardusuario.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Sebastian/Desktop/TEC/VSemestre/Administracion/Proyecto/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/dropdown_item.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Sebastian/Desktop/TEC/VSemestre/Administracion/Proyecto/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/list_item_cartelera.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/drawable/border_buttom.xml" value="0.1" />
         <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/drawable/border_top.xml" value="0.1" />
         <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/drawable/item_cartelera.xml" value="0.1865" />
         <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/font/.xml" value="0.1" />
         <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/font/roboto.xml" value="0.1" />
+        <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_adm_agregar_cartelera.xml" value="0.33" />
+        <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_adm_alimentos_agregar.xml" value="0.2056159420289855" />
+        <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_adm_alimentos_eliminar.xml" value="0.2056159420289855" />
+        <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_adm_cartelera_eliminar.xml" value="0.33" />
+        <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_adm_cartelera_general.xml" value="0.33" />
+        <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_adm_clientes_agregar.xml" value="0.2056159420289855" />
+        <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_adm_editar_cartelera.xml" value="0.33" />
         <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_boletos.xml" value="0.33" />
         <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_cartelera.xml" value="0.33" />
         <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_main.xml" value="0.3223958333333333" />

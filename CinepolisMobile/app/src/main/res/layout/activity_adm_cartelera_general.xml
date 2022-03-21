@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondodashboard"
-    tools:context=".Dashboardusuario">
+    tools:context=".AdmCarteleraGeneral">
 
     <LinearLayout
         android:layout_marginTop="32dp"
@@ -25,7 +25,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nuestros Productos"
+                android:text="Administrar Cartelera"
                 android:textAlignment="center"
                 android:textColor="#FFF"
                 android:textSize="26dp">
@@ -67,16 +67,18 @@
 
 
                     <ImageView
-                        android:id="@+id/cartelera"
-                        android:src="@drawable/estrellacinepolis"
+                        android:id="@+id/agregar"
                         android:layout_width="80dp"
-                        android:layout_height="80dp"/>
+                        android:layout_height="80dp"
+                        android:src="@drawable/estrellacinepolis"
+                        app:srcCompat="@drawable/agregar" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:textColor="#000"
-                        android:text="Cartelera"/>
+                        android:text="Agregar"
+                        android:textColor="#000" />
 
 
 
@@ -104,15 +106,17 @@
 
                     <ImageView
                         android:id="@+id/editar"
-                        android:src="@drawable/palomitas"
                         android:layout_width="80dp"
-                        android:layout_height="80dp"/>
+                        android:layout_height="80dp"
+                        android:src="@drawable/palomitas"
+                        app:srcCompat="@drawable/modificar" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:textColor="#000"
-                        android:text="Dulcería"/>
+                        android:text="Editar"
+                        android:textColor="#000" />
 
 
 
@@ -140,15 +144,17 @@
 
                     <ImageView
                         android:id="@+id/eliminar"
-                        android:src="@drawable/carritocompras"
                         android:layout_width="80dp"
-                        android:layout_height="80dp"/>
+                        android:layout_height="80dp"
+                        android:src="@drawable/carritocompras"
+                        app:srcCompat="@drawable/resta" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:textColor="#000"
-                        android:text="Carrito"/>
+                        android:text="Eliminar"
+                        android:textColor="#000" />
 
 
 
@@ -175,15 +181,16 @@
 
                     <ImageView
                         android:id="@+id/volver"
-                        android:src="@drawable/tarjetas"
                         android:layout_width="80dp"
-                        android:layout_height="80dp"/>
+                        android:layout_height="80dp"
+                        android:src="@drawable/tarjetas"
+                        app:srcCompat="@drawable/cerrarsesion" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="Agregar metódo \n        de pago"
+                        android:text="Volver"
                         android:textColor="#000" />
 
 

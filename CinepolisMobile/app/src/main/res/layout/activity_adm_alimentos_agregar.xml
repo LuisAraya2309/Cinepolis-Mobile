@@ -126,7 +126,7 @@
         app:layout_constraintVertical_bias="0.625" />
 
     <EditText
-        android:id="@+id/nombre"
+        android:id="@+id/idSala"
         android:layout_width="320dp"
         android:layout_height="52dp"
         android:background="@drawable/text_rounded_border"

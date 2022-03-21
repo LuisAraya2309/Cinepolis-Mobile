@@ -44,10 +44,10 @@ class AdmClientesModificar : AppCompatActivity() {
                 }
             }
 
-            val correoUsuario : String = (findViewById<View>(R.id.correoElectronico) as EditText).text.toString()
-            val nombreUsuario : String = (findViewById<View>(R.id.nombre) as EditText).text.toString()
-            val apellido1Usuario : String = (findViewById<View>(R.id.apellido1) as EditText).text.toString()
-            val apellido2Usuario : String = (findViewById<View>(R.id.apellido2) as EditText).text.toString()
+            val correoUsuario : String = (findViewById<View>(R.id.asientosOcupados) as EditText).text.toString()
+            val nombreUsuario : String = (findViewById<View>(R.id.idSala) as EditText).text.toString()
+            val apellido1Usuario : String = (findViewById<View>(R.id.idPelicula) as EditText).text.toString()
+            val apellido2Usuario : String = (findViewById<View>(R.id.horaFuncion) as EditText).text.toString()
 
             val identificacion: String = identificacionUsuario.toString()
             val esquemaUsuario: String = (findViewById<View>(R.id.esquemaVacunacion) as Spinner).selectedItem.toString()

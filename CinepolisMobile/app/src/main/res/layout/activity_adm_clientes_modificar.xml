@@ -50,7 +50,7 @@
         app:layout_constraintVertical_bias="0.224" />
 
     <EditText
-        android:id="@+id/apellido1"
+        android:id="@+id/idPelicula"
         android:layout_width="96dp"
         android:layout_height="50dp"
         android:background="@drawable/text_rounded_border"
@@ -79,7 +79,7 @@
         app:layout_constraintVertical_bias="0.713" />
 
     <EditText
-        android:id="@+id/nombre"
+        android:id="@+id/idSala"
         android:layout_width="96dp"
         android:layout_height="50dp"
         android:background="@drawable/text_rounded_border"
@@ -114,7 +114,7 @@
         app:layout_constraintVertical_bias="0.713" />
 
     <EditText
-        android:id="@+id/apellido2"
+        android:id="@+id/horaFuncion"
         android:layout_width="96dp"
         android:layout_height="50dp"
         android:background="@drawable/text_rounded_border"
@@ -131,7 +131,7 @@
         app:layout_constraintVertical_bias="0.499" />
 
     <EditText
-        android:id="@+id/correoElectronico"
+        android:id="@+id/asientosOcupados"
         android:layout_width="318dp"
         android:layout_height="50dp"
         android:background="@drawable/text_rounded_border"

@@ -3,7 +3,6 @@ package com.example.cinepolismobile
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageView
 
 class Dashboardusuario : AppCompatActivity() {
@@ -25,7 +24,7 @@ class Dashboardusuario : AppCompatActivity() {
             startActivity(carteleraAct)
         }
 
-        agregarMetodoPago = findViewById(R.id.cerrarsesion)
+        agregarMetodoPago = findViewById(R.id.volver)
         agregarMetodoPago!!.setOnClickListener {
 
             val tarjetasAct : Intent = Intent(this,AgregarTarjeta::class.java)

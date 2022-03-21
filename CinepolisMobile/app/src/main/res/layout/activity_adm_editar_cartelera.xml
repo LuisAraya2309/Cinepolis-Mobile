@@ -7,7 +7,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondodashboard"
-    tools:context=".Dashboardusuario">
+    tools:context=".AdmEditarCartelera">
+
+    <Spinner
+        android:id="@+id/funcioneseditar"
+        android:layout_width="318dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.455" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -54,7 +65,7 @@
         android:layout_width="131dp"
         android:layout_height="46dp"
         android:fontFamily="@font/roboto_bold"
-        android:text="Agregar"
+        android:text="Editar"
         android:textColor="#000000"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -62,7 +73,7 @@
         app:layout_constraintHorizontal_bias="0.346"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.364" />
+        app:layout_constraintVertical_bias="0.337" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -70,11 +81,11 @@
         android:layout_height="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.672"
+        app:layout_constraintHorizontal_bias="0.669"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.366"
-        app:srcCompat="@drawable/agregar" />
+        app:layout_constraintVertical_bias="0.335"
+        app:srcCompat="@drawable/modificar" />
 
     <EditText
         android:id="@+id/asientosOcupados"
@@ -83,14 +94,14 @@
         android:background="@drawable/text_rounded_border"
         android:ems="10"
         android:fontFamily="@font/roboto"
-        android:hint=" Correo electrónico"
+        android:hint=" Asientos Ocupados"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.61" />
+        app:layout_constraintVertical_bias="0.812" />
 
     <TextView
         android:id="@+id/verFecha"
@@ -98,15 +109,15 @@
         android:layout_height="50dp"
         android:background="@drawable/text_rounded_border"
         android:fontFamily="@font/roboto"
-        android:text=" Fecha de Nacimiento"
+        android:text="Fecha"
         android:textColor="#4F000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.707"
+        app:layout_constraintHorizontal_bias="0.584"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.723" />
+        app:layout_constraintVertical_bias="0.688" />
 
     <EditText
         android:id="@+id/horaFuncion"
@@ -115,14 +126,15 @@
         android:background="@drawable/text_rounded_border"
         android:ems="10"
         android:fontFamily="@font/roboto"
-        android:hint=" Apellido2"
+        android:hint="Hora"
         android:inputType="textPersonName"
         android:textColor="#4F000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.853"
+        app:layout_constraintHorizontal_bias="0.142"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.688" />
 
     <EditText
         android:id="@+id/idPelicula"
@@ -131,14 +143,15 @@
         android:background="@drawable/text_rounded_border"
         android:ems="10"
         android:fontFamily="@font/roboto"
-        android:hint=" Apellido1"
+        android:hint="IdPelicula"
         android:inputType="textPersonName"
         android:textColor="#4F000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.149"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.572" />
 
     <EditText
         android:id="@+id/idSala"
@@ -147,32 +160,16 @@
         android:background="@drawable/text_rounded_border"
         android:ems="10"
         android:fontFamily="@font/roboto"
-        android:hint=" Nombre"
+        android:hint="Sala"
         android:inputType="textPersonName"
         android:textColor="#4F000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.149"
-        app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/identificacion"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:background="@drawable/text_rounded_border"
-        android:ems="10"
-        android:fontFamily="@font/roboto"
-        android:hint=" Identificación"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintHorizontal_bias="0.539"
         app:layout_constraintStart_toStartOf="parent"
 
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.723" />
+        app:layout_constraintVertical_bias="0.572" />
 
     <ImageView
         android:id="@+id/calendario"
@@ -181,36 +178,24 @@
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintHorizontal_bias="0.85"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.731"
+        app:layout_constraintVertical_bias="0.681"
         app:srcCompat="@drawable/calendario" />
-
-    <Spinner
-        android:id="@+id/esquemaVacunacion"
-        android:layout_width="318dp"
-        android:layout_height="50dp"
-        android:entries="@array/EsquemaV"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.848" />
 
     <Button
         android:id="@+id/editarCartelera"
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:text="Agregar"
         android:backgroundTint="#666DFF"
+        android:text="Editar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.941" />
+        app:layout_constraintVertical_bias="0.925" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

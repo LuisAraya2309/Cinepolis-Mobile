@@ -12,8 +12,6 @@ import java.sql.Connection
 import java.sql.PreparedStatement
 import java.sql.ResultSet
 import java.text.SimpleDateFormat
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter
 import java.util.*
 
 
@@ -55,10 +53,10 @@ class RegistrarCuenta : AppCompatActivity() {
             val objConexion : Connection? = conexionBase.conectarDB()  //Crear el objeto conexion
 
             //Obtener los campos necesarios para el procesamiento de datos con su id en XML
-            val correoUsuario : String = (findViewById<View>(R.id.correoElectronico) as EditText).text.toString()
-            val nombreUsuario : String = (findViewById<View>(R.id.nombre) as EditText).text.toString()
-            val apellido1Usuario : String = (findViewById<View>(R.id.apellido1) as EditText).text.toString()
-            val apellido2Usuario : String = (findViewById<View>(R.id.apellido2) as EditText).text.toString()
+            val correoUsuario : String = (findViewById<View>(R.id.asientosOcupados) as EditText).text.toString()
+            val nombreUsuario : String = (findViewById<View>(R.id.idSala) as EditText).text.toString()
+            val apellido1Usuario : String = (findViewById<View>(R.id.idPelicula) as EditText).text.toString()
+            val apellido2Usuario : String = (findViewById<View>(R.id.horaFuncion) as EditText).text.toString()
             val identificacionUsuario : Int = ((findViewById<View>(R.id.identificacion) as EditText).text.toString()).toInt()
             val fechaUsuario : String = (findViewById<View>(R.id.verFecha) as TextView).text.toString()
             val esquemaUsuario: String = (findViewById<View>(R.id.esquemaVacunacion) as Spinner).selectedItem.toString()

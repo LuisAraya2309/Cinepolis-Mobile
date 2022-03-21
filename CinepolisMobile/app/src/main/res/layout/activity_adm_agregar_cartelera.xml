@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondodashboard"
-    tools:context=".Dashboardusuario">
+    tools:context=".AdmAgregarCartelera">
 
     <ImageView
         android:id="@+id/imageView4"
@@ -83,7 +83,7 @@
         android:background="@drawable/text_rounded_border"
         android:ems="10"
         android:fontFamily="@font/roboto"
-        android:hint=" Correo electrónico"
+        android:hint=" Asientos Ocupados"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -103,7 +103,7 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.707"
+        app:layout_constraintHorizontal_bias="0.412"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.723" />
@@ -115,7 +115,7 @@
         android:background="@drawable/text_rounded_border"
         android:ems="10"
         android:fontFamily="@font/roboto"
-        android:hint=" Apellido2"
+        android:hint="Hora"
         android:inputType="textPersonName"
         android:textColor="#4F000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -131,7 +131,7 @@
         android:background="@drawable/text_rounded_border"
         android:ems="10"
         android:fontFamily="@font/roboto"
-        android:hint=" Apellido1"
+        android:hint="IdPelicula"
         android:inputType="textPersonName"
         android:textColor="#4F000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -147,7 +147,7 @@
         android:background="@drawable/text_rounded_border"
         android:ems="10"
         android:fontFamily="@font/roboto"
-        android:hint=" Nombre"
+        android:hint="Sala"
         android:inputType="textPersonName"
         android:textColor="#4F000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -157,23 +157,6 @@
 
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/identificacion"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:background="@drawable/text_rounded_border"
-        android:ems="10"
-        android:fontFamily="@font/roboto"
-        android:hint=" Identificación"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.18"
-        app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.723" />
-
     <ImageView
         android:id="@+id/calendario"
         android:layout_width="30dp"
@@ -181,36 +164,24 @@
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintHorizontal_bias="0.664"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.731"
+        app:layout_constraintVertical_bias="0.716"
         app:srcCompat="@drawable/calendario" />
-
-    <Spinner
-        android:id="@+id/esquemaVacunacion"
-        android:layout_width="318dp"
-        android:layout_height="50dp"
-        android:entries="@array/EsquemaV"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.848" />
 
     <Button
         android:id="@+id/editarCartelera"
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:text="Agregar"
         android:backgroundTint="#666DFF"
+        android:text="Agregar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.941" />
+        app:layout_constraintVertical_bias="0.844" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

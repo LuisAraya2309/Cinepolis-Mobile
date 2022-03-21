@@ -12,8 +12,6 @@ import java.sql.Connection
 import java.sql.PreparedStatement
 import java.sql.ResultSet
 import java.text.SimpleDateFormat
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter
 import java.util.*
 
 class AgregarTarjeta : AppCompatActivity() {
@@ -55,7 +53,7 @@ class AgregarTarjeta : AppCompatActivity() {
             val objConexion : Connection? = conexionBase.conectarDB()  //Crear el objeto conexion
 
             //Obtener los campos necesarios para el procesamiento de datos con su id en XML
-            val titular : String = (findViewById<View>(R.id.nombre) as EditText).text.toString()
+            val titular : String = (findViewById<View>(R.id.idSala) as EditText).text.toString()
             val numeroTarjeta : String = (findViewById<View>(R.id.numeroTarjeta) as EditText).text.toString()
             val codigoSeguridad : Int = ((findViewById<View>(R.id.codigoSeguridad) as EditText).text.toString()).toInt()
             val fechaVencimiento : String = (findViewById<View>(R.id.verFecha) as TextView).text.toString()

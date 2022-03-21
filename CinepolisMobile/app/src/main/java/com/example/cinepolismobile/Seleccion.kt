@@ -98,6 +98,9 @@ class Seleccion : AppCompatActivity() {
             val iniciarConexion : PreparedStatement? = conexionBD.prepararConsulta(objConexion,consulta)
             val dataSet  = iniciarConexion?.executeUpdate()
 
+
+
+
         }
 
     }
