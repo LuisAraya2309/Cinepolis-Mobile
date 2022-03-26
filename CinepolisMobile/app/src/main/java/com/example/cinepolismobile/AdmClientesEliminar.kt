@@ -1,24 +1,14 @@
 package com.example.cinepolismobile
 
-import android.app.Activity
-import android.content.Context
-import android.content.ContextWrapper
+
 import android.content.Intent
-import android.content.res.Configuration
-import android.media.Image
-import android.net.Uri
 import android.os.Bundle
-import android.os.Environment
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import java.io.File
-import java.io.FileOutputStream
 import java.sql.Connection
 import java.sql.PreparedStatement
 import java.sql.ResultSet
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter
 
 class AdmClientesEliminar : AppCompatActivity(){
 
@@ -49,7 +39,7 @@ class AdmClientesEliminar : AppCompatActivity(){
                 }
             }
             val identificacion: String = identificacionUsuario.toString()
-            val consulta = "EXECUTE sp_EliminarCliente?"
+            val consulta = "EXECUTE sp_EliminarCliente ?"
             val iniciarConexion : PreparedStatement? = conexionBase.prepararConsulta(objConexion,consulta)
 
             iniciarConexion?.setInt(1,identificacion.toInt())
@@ -63,8 +53,8 @@ class AdmClientesEliminar : AppCompatActivity(){
                     Toast.makeText(this,"¡Cliente eliminado con éxito!", Toast.LENGTH_LONG).show()
 
                     //Pasar al inicio de sesion
-                    val inicioSesion : Intent = Intent(this,MainActivity::class.java)
-                    startActivity(inicioSesion)
+                    val dashbordAdmCliente : Intent = Intent(this,AdmClientes::class.java)
+                    startActivity(dashbordAdmCliente)
                 }
                 else{
                     Toast.makeText(this,"Información inválida", Toast.LENGTH_LONG).show()

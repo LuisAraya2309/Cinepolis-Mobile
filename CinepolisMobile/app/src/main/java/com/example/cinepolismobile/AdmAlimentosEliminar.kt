@@ -1,24 +1,14 @@
 package com.example.cinepolismobile
 
-import android.app.Activity
-import android.content.Context
-import android.content.ContextWrapper
+
 import android.content.Intent
-import android.content.res.Configuration
-import android.media.Image
-import android.net.Uri
 import android.os.Bundle
-import android.os.Environment
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import java.io.File
-import java.io.FileOutputStream
 import java.sql.Connection
 import java.sql.PreparedStatement
 import java.sql.ResultSet
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter
 
 class AdmAlimentosEliminar : AppCompatActivity(){
 

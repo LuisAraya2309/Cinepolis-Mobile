@@ -53,6 +53,7 @@ class RegistrarCuenta : AppCompatActivity() {
             val objConexion : Connection? = conexionBase.conectarDB()  //Crear el objeto conexion
 
             //Obtener los campos necesarios para el procesamiento de datos con su id en XML
+            val contraseñaUsuario : String = crearContraseña()
             val correoUsuario : String = (findViewById<View>(R.id.asientosOcupados) as EditText).text.toString()
             val nombreUsuario : String = (findViewById<View>(R.id.idSala) as EditText).text.toString()
             val apellido1Usuario : String = (findViewById<View>(R.id.idPelicula) as EditText).text.toString()
@@ -60,24 +61,6 @@ class RegistrarCuenta : AppCompatActivity() {
             val identificacionUsuario : Int = ((findViewById<View>(R.id.identificacion) as EditText).text.toString()).toInt()
             val fechaUsuario : String = (findViewById<View>(R.id.verFecha) as TextView).text.toString()
             val esquemaUsuario: String = (findViewById<View>(R.id.esquemaVacunacion) as Spinner).selectedItem.toString()
-            println(fechaUsuario)
-
-            //Funcion para contraseña aleatoria
-            var contraseña: String  = ""
-
-            fun crearContraseña(pContraseña: String ) : String {
-                val alfabeto = 'a'..'z'
-                val numeros  = 1..9
-                while(pContraseña.length.equals(7)){
-                    if(numeros.random()<5){
-                        pContraseña + numeros.random()
-                    }else{
-                        pContraseña + alfabeto.random()
-                    }
-                }
-                return pContraseña
-            }
-            val contraseñaUsuario : String = crearContraseña(contraseña)
 
             //Escribir la consulta
             val consulta = "EXECUTE sp_CrearCuenta ?,?,?,?,?,?,?,?,?"
@@ -120,6 +103,20 @@ class RegistrarCuenta : AppCompatActivity() {
         val formato = "yyyy-MM-dd"
         val sdf = SimpleDateFormat(formato,Locale.US)
         tvSeleccionarFecha.setText(sdf.format(calendario.time))
+    }
+
+    fun crearContraseña() : String {
+        var contraseña = "" ; val alfabeto = 'a'..'z'
+        val numeros  = 1..9 ; var indice = 0 ; val tamaño: IntRange = 7..11
+        while(indice <= tamaño.random()){
+            if(numeros.random()<5){
+                contraseña += numeros.random()
+            }else{
+                contraseña += alfabeto.random()
+            }
+            indice++
+        }
+        return contraseña
     }
 }
 

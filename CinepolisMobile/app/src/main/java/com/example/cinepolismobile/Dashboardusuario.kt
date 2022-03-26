@@ -9,10 +9,13 @@ class Dashboardusuario : AppCompatActivity() {
 
     private var verCartelera : ImageView? = null
     private var agregarMetodoPago : ImageView? = null
+    private var carrito : ImageView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.dashboardusuario)
+
+        val idUsuario = intent.extras!!.getInt("idUsuario")
 
         verCartelera = findViewById(R.id.cartelera)
 
@@ -29,6 +32,14 @@ class Dashboardusuario : AppCompatActivity() {
 
             val tarjetasAct : Intent = Intent(this,AgregarTarjeta::class.java)
             startActivity(tarjetasAct)
+        }
+
+        carrito = findViewById(R.id.carrito)
+        carrito!!.setOnClickListener {
+
+            val CarritoAct : Intent = Intent(this,CarritoCliente::class.java)
+            CarritoAct.putExtra("idUsuario",idUsuario)
+            startActivity(CarritoAct)
         }
     }
 }

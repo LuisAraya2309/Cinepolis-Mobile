@@ -22,7 +22,6 @@ class AdmClientesAgregar : AppCompatActivity() {
     private var crearCuenta : Button? = null
     private var conexionBase = ConexionBD()
 
-
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,7 +30,7 @@ class AdmClientesAgregar : AppCompatActivity() {
 
         tvSeleccionarFecha = findViewById(R.id.verFecha)
         ivSeleccionarFecha = findViewById(R.id.calendario)
-        crearCuenta = findViewById(R.id.crearCuenta)
+        crearCuenta = findViewById(R.id.agregarCliente)
 
         val calendario = Calendar.getInstance()
 

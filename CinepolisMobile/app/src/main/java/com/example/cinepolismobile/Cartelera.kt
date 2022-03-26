@@ -17,9 +17,7 @@ class Cartelera : AppCompatActivity() {
         val listaPeliculas = obtenerPelículas()  //Se obtienen las peliculas de la base de datos
 
 
-        carteleraPeliculas!!.adapter = AdapterPeliculas(this,R.layout.list_item_cartelera,listaPeliculas)
-
-
+        carteleraPeliculas!!.adapter = AdapterPeliculas(this,R.layout.list_item_carrito,listaPeliculas)
 
         carteleraPeliculas!!.setOnItemClickListener{parent,view,position,id ->
             //Se recolecta la pelicula escogida y se inicia la interfaz de agregar boletos

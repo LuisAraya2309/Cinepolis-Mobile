@@ -63,9 +63,16 @@ class MainActivity : AppCompatActivity() {
                 tipoUsuario = dataSet.getInt(2)
                 Toast.makeText(this,"¡Bienvenido!",Toast.LENGTH_LONG).show()
 
-                //Pasar a la siguiente interfaz
-                val dashboardPrincipal : Intent = Intent(this,AdmEditarCartelera::class.java)
-                startActivity(dashboardPrincipal)
+                if(idUsuario == 2){
+                    //Pasar a la siguiente interfaz
+                    val dashboardPrincipal : Intent = Intent(this,Dashboardusuario::class.java)
+                    dashboardPrincipal.putExtra("idUsuario",idUsuario)
+                    startActivity(dashboardPrincipal)
+                }else{
+                    val dashboardAdmin : Intent = Intent(this,AdmClientes::class.java)
+                    startActivity(dashboardAdmin)
+                }
+
             }
             else{
                 Toast.makeText(this,"Credenciales incorrectas",Toast.LENGTH_LONG).show()
