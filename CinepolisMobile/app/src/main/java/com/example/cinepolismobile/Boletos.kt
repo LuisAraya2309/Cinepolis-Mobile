@@ -111,7 +111,8 @@ class Boletos : AppCompatActivity() {
             pasarSeleccion.putExtra("horaFuncion",horaFuncion)
             pasarSeleccion.putExtra("cantidadAsientos",totalAsientos)
             pasarSeleccion.putExtra("costoTotal",totalplatas.text.toString().toInt())
-
+            val idCliente = intent.extras!!.getInt("idCliente")
+            pasarSeleccion.putExtra("idCliente",idCliente)
             startActivity(pasarSeleccion)
         }
 

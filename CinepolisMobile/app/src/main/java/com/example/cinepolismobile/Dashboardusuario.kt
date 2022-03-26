@@ -24,6 +24,8 @@ class Dashboardusuario : AppCompatActivity() {
 
             //Pasar a la siguiente interfaz
             val carteleraAct : Intent = Intent(this,Cartelera::class.java)
+            val idCliente = intent.extras!!.getInt("idCliente")
+            carteleraAct.putExtra("idCliente",idCliente)
             startActivity(carteleraAct)
         }
 

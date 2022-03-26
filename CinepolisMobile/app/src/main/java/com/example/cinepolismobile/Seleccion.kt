@@ -1,9 +1,12 @@
 package com.example.cinepolismobile
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
+import java.sql.Connection
 import java.sql.PreparedStatement
+import java.sql.ResultSet
 import java.util.*
 
 class Seleccion : AppCompatActivity() {
@@ -100,11 +103,36 @@ class Seleccion : AppCompatActivity() {
 
 
 
+            val devolverDashboard : Intent = Intent(this,Dashboardusuario::class.java)
+            val idCliente = intent.extras!!.getInt("idCliente")
+            var infoBoletos: String = "Boletos de "+ obtenerNombrePelicula(idPelicula) + ",Hora: " + horaFuncion
+            actualizarCarrito(infoBoletos, idCliente)
+            devolverDashboard.putExtra("idCliente",idCliente)
+            startActivity(devolverDashboard)
 
         }
 
     }
 
+    fun actualizarCarrito(infoBoletos:String,idCliente:Int){
+        val conexionBase = ConexionBD()
+        val objConexion : Connection? = conexionBase.conectarDB()  //Crear el objeto conexion
+        val consulta = "IF NOT EXISTS (SELECT * FROM Carritos WHERE IdCliente = $idCliente)   INSERT INTO Carritos VALUES(3,'$infoBoletos')"
+        val iniciarConexion :PreparedStatement? = conexionBase.prepararConsulta(objConexion,consulta)
+        iniciarConexion?.executeUpdate()
+    }
+
+    fun obtenerNombrePelicula(idPelicula: Int):String{
+        val conexionBase = ConexionBD()
+        val objConexion : Connection? = conexionBase.conectarDB()  //Crear el objeto conexion
+        val consulta = "SELECT P.Titulo FROM dbo.Pelicula AS P WHERE P.Id = $idPelicula"
+        val iniciarConexion :PreparedStatement? = conexionBase.prepararConsulta(objConexion,consulta)
+        val dataSet = iniciarConexion?.executeQuery()
+        if(dataSet!!.next()){
+            return dataSet.getString(1)
+        }
+        return "No disponible"
+    }
 
 
 

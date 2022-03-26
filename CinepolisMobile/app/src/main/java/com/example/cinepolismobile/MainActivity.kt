@@ -83,6 +83,20 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
+    fun obtenerIdCliente(email:String,password:String):Int{
+        val objConexion : Connection? = conexionBase.conectarDB()  //Crear el objeto conexion
+        val consulta = "SELECT U.Id FROM dbo.Usuarios AS U WHERE U.CorreoElectronico = '$email' AND U.Contraseña = '$password'"
+        val iniciarConexion :PreparedStatement? = conexionBase.prepararConsulta(objConexion,consulta)
+        val dataSet : ResultSet? = iniciarConexion?.executeQuery()
+        if (dataSet!!.next()){   //Si el dataset es nulo, las credenciales son incorrectas
+            return  dataSet.getInt(1)
+
+        }
+
+        return -1
+
+    }
+
 
 
 

@@ -38,6 +38,8 @@ class Cartelera : AppCompatActivity() {
             pasarAgregarBoletos.putExtra("idioma",idiomaSeleccionado)
             pasarAgregarBoletos.putExtra("idPelicula",idPelicula)
             pasarAgregarBoletos.putExtra("horaFuncion",horaFuncion)
+            val idCliente = intent.extras!!.getInt("idCliente")
+            pasarAgregarBoletos.putExtra("idCliente",idCliente)
             startActivity(pasarAgregarBoletos)
         }
 
