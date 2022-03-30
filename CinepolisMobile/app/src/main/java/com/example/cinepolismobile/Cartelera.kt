@@ -42,9 +42,6 @@ class Cartelera : AppCompatActivity() {
             pasarAgregarBoletos.putExtra("idCliente",idCliente)
             startActivity(pasarAgregarBoletos)
         }
-
-
-
     }
 
     fun obtenerPelículas(): List<Pelicula> {

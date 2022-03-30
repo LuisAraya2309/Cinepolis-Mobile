@@ -44,8 +44,9 @@ class VentanaEmergente : AppCompatActivity(){
 
         salir = findViewById(R.id.salir)
         salir!!.setOnClickListener{
-            val registrar : Intent = Intent(this,CarritoCliente::class.java)
-            startActivity(registrar)
+            val carrito : Intent = Intent(this,CarritoCliente::class.java)
+            carrito.putExtra("idUsuario",idUsuario)
+            startActivity(carrito)
         }
 
         sumar = findViewById(R.id.sumar)
@@ -85,7 +86,7 @@ class VentanaEmergente : AppCompatActivity(){
                 outResultCode = dataSet.getInt("Codigo")
 
                 if(outResultCode==0){
-                    Toast.makeText(this,"¡Gracias por su compra ,la factura llegara a su correo electrónico!", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this,"Carrito actualizado", Toast.LENGTH_LONG).show()
 
                     //Pasar al inicio de sesion
                     val carrito : Intent = Intent(this,CarritoCliente::class.java)
@@ -100,6 +101,7 @@ class VentanaEmergente : AppCompatActivity(){
             objConexion?.close()
         }
     }
+
     fun obtenerProductos(idUsuario:Int):List<String> {
         val conexionBD = ConexionBD()
         val objConexion = conexionBD.conectarDB()
@@ -139,6 +141,7 @@ class VentanaEmergente : AppCompatActivity(){
             else{
                 if(listaProductos[indice] != cambiar){
                     listaFinal += ("," + listaProductos[indice])
+                    println(listaProductos[indice])
                 }else{
                     cambiado = cambiar.split("-")
                     listaFinal += ("," + cantidad.toString()+ "-" + cambiado[1])
