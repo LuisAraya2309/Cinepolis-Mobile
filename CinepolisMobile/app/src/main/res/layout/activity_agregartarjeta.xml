@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondodashboard"
-    tools:context=".Dashboardusuario">
+    tools:context=".AgregarTarjeta">
 
     <ImageView
         android:id="@+id/imageView4"

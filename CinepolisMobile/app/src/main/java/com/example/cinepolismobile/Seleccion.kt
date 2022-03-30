@@ -31,6 +31,8 @@ class Seleccion : AppCompatActivity() {
         setContentView(R.layout.activity_seleccion)
         val idPelicula = intent.extras!!.getInt("idPelicula")
         cantidadAsientos = intent.extras!!.getInt("cantidadAsientos")
+        val asientosTotalesCarrito = intent.extras!!.getInt("cantidadAsientos")
+        val costoTotalAsientos : Int = intent.extras!!.getInt("costoTotal")
         val horaFuncion: String? = intent.extras!!.getString("horaFuncion")
         val letras = listOf<String>("A","B","C","D","E","F")
         val numeros = listOf<String>("1","2","3","4","5","6","7","8","9","10")
@@ -50,19 +52,20 @@ class Seleccion : AppCompatActivity() {
 
         botonSeleccionar = findViewById(R.id.seleccionar_asiento)
         botonSeleccionar.setOnClickListener {
+            println(cantidadAsientos)
             val asientoSeleccionado = spinnerFila.selectedItem.toString() + spinnerAsiento.selectedItem.toString()
-            if(cantidadAsientos<=0){
-                botonSeleccionar.isEnabled = false
-            }
 
             if(asientoSeleccionado in listaSeleccionados!! || asientoSeleccionado in listaOcupadosAntes!!){
                 Toast.makeText(this,"Ese asiento ya ha sido seleccionado ", Toast.LENGTH_SHORT).show()
             }
             else{
-                Toast.makeText(this,"Asiento seleccionado ", Toast.LENGTH_SHORT).show()
                 listaSeleccionados!!.add(asientoSeleccionado)
                 asientosEscogidos+=("$asientoSeleccionado ")
-                cantidadAsientos-=1
+                this.cantidadAsientos -= 1
+                if(cantidadAsientos==0){
+                    botonSeleccionar.isEnabled = false
+                }
+                Toast.makeText(this,"Asiento seleccionado ", Toast.LENGTH_SHORT).show()
             }
 
         }
@@ -105,7 +108,7 @@ class Seleccion : AppCompatActivity() {
 
             val devolverDashboard : Intent = Intent(this,Dashboardusuario::class.java)
             val idCliente = intent.extras!!.getInt("idCliente")
-            var infoBoletos: String = "Boletos de "+ obtenerNombrePelicula(idPelicula) + ",Hora: " + horaFuncion
+            var infoBoletos: String = "$asientosTotalesCarrito-Boletos de "+ obtenerNombrePelicula(idPelicula) + " " + horaFuncion + " ₡$costoTotalAsientos"
             actualizarCarrito(infoBoletos, idCliente)
             devolverDashboard.putExtra("idCliente",idCliente)
             startActivity(devolverDashboard)
@@ -117,8 +120,8 @@ class Seleccion : AppCompatActivity() {
     fun actualizarCarrito(infoBoletos:String,idCliente:Int){
         val conexionBase = ConexionBD()
         val objConexion : Connection? = conexionBase.conectarDB()  //Crear el objeto conexion
-        val consulta = "IF NOT EXISTS (SELECT * FROM Carritos WHERE IdCliente = $idCliente)   INSERT INTO Carritos VALUES(3,'$infoBoletos')"
-        val iniciarConexion :PreparedStatement? = conexionBase.prepararConsulta(objConexion,consulta)
+        val consulta = "IF NOT EXISTS (SELECT * FROM Carritos WHERE IdCliente = $idCliente)   INSERT INTO Carritos VALUES($idCliente,'$infoBoletos')"
+        val iniciarConexion : PreparedStatement? = conexionBase.prepararConsulta(objConexion,consulta)
         iniciarConexion?.executeUpdate()
     }
 

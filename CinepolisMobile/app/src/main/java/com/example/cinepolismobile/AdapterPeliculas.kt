@@ -18,26 +18,24 @@ class AdapterPeliculas( var mCtx: Context, var resources:Int, var listaPeliculas
         val inflater : LayoutInflater = LayoutInflater.from(mCtx)
         val view : View = inflater.inflate(resources,null)
 
-        val imagenPelicula = view.findViewById<ImageView>(R.id.imagen_pelicula)
+
         val titulo = view.findViewById<TextView>(R.id.titulo_pelicula)
         val director = view.findViewById<TextView>(R.id.director)
         val publicacion = view.findViewById<TextView>(R.id.año_publicacion)
         val edad_permitida = view.findViewById<TextView>(R.id.edad_permitida)
         val idioma = view.findViewById<TextView>(R.id.idioma)
 
-        /*
-        try{
-            var streamBinario : InputStream? = listaPeliculas[position].imagen
-             var opciones  = Options()
-             opciones.inJustDecodeBounds = true
 
-            var imagenBinaria : Bitmap
-            imagenBinaria = BitmapFactory.decodeStream(streamBinario,null,opciones)!!
-        }catch(e:Exception){
+        var blob = listaPeliculas[position].imagen
+        var imagenBinaria  = blob.getBytes(1, blob.length().toInt())
+        var opciones = Options()
+        var bitmap = BitmapFactory.decodeByteArray(imagenBinaria,0,imagenBinaria.size,opciones)
 
-        }
-        */
-        imagenPelicula.setImageResource(R.drawable.jarvissd)
+        //blob.free()
+        //imagenBinaria = null
+
+        val imagenPelicula = view.findViewById<ImageView>(R.id.imagen__pelicula)
+        imagenPelicula.setImageBitmap(bitmap)
         titulo.text = listaPeliculas[position].titulo
         director.text = listaPeliculas[position].hora
         publicacion.text = listaPeliculas[position].añoPublicacion

@@ -17,7 +17,7 @@ class Cartelera : AppCompatActivity() {
         val listaPeliculas = obtenerPelículas()  //Se obtienen las peliculas de la base de datos
 
 
-        carteleraPeliculas!!.adapter = AdapterPeliculas(this,R.layout.list_item_carrito,listaPeliculas)
+        carteleraPeliculas!!.adapter = AdapterPeliculas(this,R.layout.list_item_cartelera,listaPeliculas)
 
         carteleraPeliculas!!.setOnItemClickListener{parent,view,position,id ->
             //Se recolecta la pelicula escogida y se inicia la interfaz de agregar boletos
@@ -68,7 +68,7 @@ class Cartelera : AppCompatActivity() {
         val listaPeliculas = dataSet.use {
             generateSequence {
                 if (dataSet!!.next()){
-                    Pelicula(dataSet.getString(1), dataSet.getString(2), dataSet.getString(3), dataSet.getString(4), dataSet.getString(5),dataSet.getBinaryStream(6),dataSet.getInt(7),dataSet.getString(8))
+                    Pelicula(dataSet.getString(1), dataSet.getString(2), dataSet.getString(3), dataSet.getString(4), dataSet.getString(5),dataSet.getBlob(6),dataSet.getInt(7),dataSet.getString(8))
                 }  else{
                     null
                 }
@@ -76,8 +76,6 @@ class Cartelera : AppCompatActivity() {
         }
 
         return listaPeliculas
-
-
     }
 }
 

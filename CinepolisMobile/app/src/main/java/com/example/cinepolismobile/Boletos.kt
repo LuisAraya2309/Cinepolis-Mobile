@@ -67,17 +67,17 @@ class Boletos : AppCompatActivity() {
         sumatercera.setOnClickListener {
             qtytercera.text = (qtytercera.text.toString().toInt() + 1).toString()
             totalplatas.text = (totalplatas.text.toString().toInt() + 2500).toString()
-            totalAsientos +=1
+            totalAsientos ++
         }
         sumaadultos.setOnClickListener {
             qtyadultos.text = (qtyadultos.text.toString().toInt() + 1).toString()
             totalplatas.text = (totalplatas.text.toString().toInt() + 3000).toString()
-            totalAsientos +=1
+            totalAsientos ++
         }
         sumaninos.setOnClickListener {
             qtyninos.text = (qtyninos.text.toString().toInt() + 1).toString()
             totalplatas.text = (totalplatas.text.toString().toInt() + 2100).toString()
-            totalAsientos +=1
+            totalAsientos ++
         }
 
         //Restas
@@ -85,25 +85,26 @@ class Boletos : AppCompatActivity() {
             if(qtytercera.text.toString().toInt() - 1>=0){
                 qtytercera.text = (qtytercera.text.toString().toInt() - 1).toString()
                 totalplatas.text = (totalplatas.text.toString().toInt() - 2500).toString()
-                totalAsientos -=1
+                totalAsientos --
             }
         }
         restaadultos.setOnClickListener {
             if(qtyadultos.text.toString().toInt() - 1>=0){
                 qtyadultos.text = (qtyadultos.text.toString().toInt() - 1).toString()
                 totalplatas.text = (totalplatas.text.toString().toInt() - 3000).toString()
-                totalAsientos -=1
+                totalAsientos --
             }
         }
         restaninos.setOnClickListener {
             if(qtyninos.text.toString().toInt() - 1>=0){
                 qtyninos.text = (qtyninos.text.toString().toInt() - 1).toString()
                 totalplatas.text = (totalplatas.text.toString().toInt() - 2100).toString()
-                totalAsientos -=1
+                totalAsientos --
             }
         }
 
         seleccionarasientos.setOnClickListener {
+            val idCliente = intent.extras!!.getInt("idCliente")
             var pasarSeleccion : Intent = Intent(this,Seleccion::class.java)
             pasarSeleccion.putExtra("pelicula",pelicula)
             pasarSeleccion.putExtra("idioma",idioma)
@@ -111,7 +112,6 @@ class Boletos : AppCompatActivity() {
             pasarSeleccion.putExtra("horaFuncion",horaFuncion)
             pasarSeleccion.putExtra("cantidadAsientos",totalAsientos)
             pasarSeleccion.putExtra("costoTotal",totalplatas.text.toString().toInt())
-            val idCliente = intent.extras!!.getInt("idCliente")
             pasarSeleccion.putExtra("idCliente",idCliente)
             startActivity(pasarSeleccion)
         }
