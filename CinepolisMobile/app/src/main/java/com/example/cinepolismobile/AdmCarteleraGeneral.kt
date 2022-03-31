@@ -1,5 +1,6 @@
 package com.example.cinepolismobile
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
@@ -20,8 +21,24 @@ class AdmCarteleraGeneral : AppCompatActivity() {
         eliminarFuncion = findViewById(R.id.eliminar)
         volverFuncion = findViewById(R.id.volver)
 
-        agregarFuncion.setOnClickListener {
+        agregarFuncion!!.setOnClickListener {
+            val act : Intent = Intent(this,AdmAgregarCartelera::class.java)
+            startActivity(act)
+        }
 
+        editarFuncion!!.setOnClickListener {
+            val act : Intent = Intent(this,AdmEditarCartelera::class.java)
+            startActivity(act)
+        }
+
+        eliminarFuncion!!.setOnClickListener {
+            val act : Intent = Intent(this,AdmCarteleraEliminar::class.java)
+            startActivity(act)
+        }
+
+        volverFuncion!!.setOnClickListener {
+            val act : Intent = Intent(this,Dashboardadmin::class.java)
+            startActivity(act)
         }
 
 

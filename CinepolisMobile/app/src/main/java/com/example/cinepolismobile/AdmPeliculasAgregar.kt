@@ -60,7 +60,7 @@ class AdmPeliculasAgregar : AppCompatActivity() {
             iniciarConexion?.setInt(6,publicacion)
             iniciarConexion?.setInt(7,duracion)
             iniciarConexion?.setInt(8,edadRequerida)
-            iniciarConexion?.setBytes(5,imagen)
+            iniciarConexion?.setBytes(9,imagen)
 
             val dataSet : ResultSet? = iniciarConexion?.executeQuery()
 

@@ -1,5 +1,6 @@
 package com.example.cinepolismobile
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ListView
@@ -16,6 +17,12 @@ class Alimentos : AppCompatActivity() {
         val listaAlimentos = obtenerAlimentos()
 
         carteleraAlimentos!!.adapter = AdapterAlimentos(this,R.layout.list_item_alimentos,listaAlimentos)
+
+        carteleraAlimentos!!.setOnItemClickListener{parent,view,position,id ->
+            val alimentoSelec = listaAlimentos[position].nombre // Esta entrando una pelicula o un string
+            var tipo:String = listaAlimentos[position].tipo
+            val precio : Int = listaAlimentos[position].precio
+        }
 
     }
 
