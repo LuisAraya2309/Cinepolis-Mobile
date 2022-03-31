@@ -83,7 +83,10 @@ class RegistrarCuenta : AppCompatActivity() {
                 outResultCode = dataSet.getInt("OutResultCode")
 
                 if(outResultCode==0){
-                    Toast.makeText(this,"¡Cuenta creada con exito!", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this,"¡Cuenta creada con éxito, su contraseña se enviara al correo electrónico!", Toast.LENGTH_LONG).show()
+
+                    var enviarCorreo =  EnviarContraseña(this,correoUsuario,"Contraseña usuario","$nombreUsuario $apellido1Usuario $apellido2Usuario \ncontraseñaUsuario")
+                    enviarCorreo.execute()
 
                     //Pasar al inicio de sesion
                     val inicioSesion : Intent = Intent(this,MainActivity::class.java)
@@ -118,5 +121,6 @@ class RegistrarCuenta : AppCompatActivity() {
         }
         return contraseña
     }
+
 }
 
