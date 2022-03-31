@@ -16,12 +16,18 @@ class Alimentos : AppCompatActivity() {
         carteleraAlimentos  = findViewById<ListView>(R.id.carteleraAlimentos)
         val listaAlimentos = obtenerAlimentos()
 
+        val idUsuario = intent.extras!!.getInt("idUsuario")
+
         carteleraAlimentos!!.adapter = AdapterAlimentos(this,R.layout.list_item_alimentos,listaAlimentos)
 
         carteleraAlimentos!!.setOnItemClickListener{parent,view,position,id ->
             val alimentoSelec = listaAlimentos[position].nombre // Esta entrando una pelicula o un string
             var tipo:String = listaAlimentos[position].tipo
             val precio : Int = listaAlimentos[position].precio
+
+            val act : Intent = Intent(this,AgregarAlimentoCarrito::class.java)
+            act.putExtra("idUsuario",idUsuario)
+            startActivity(act)
         }
 
     }
