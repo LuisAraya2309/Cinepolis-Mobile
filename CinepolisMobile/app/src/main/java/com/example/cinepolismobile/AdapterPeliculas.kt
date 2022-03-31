@@ -1,12 +1,17 @@
 package com.example.cinepolismobile
 
 import android.content.Context
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
+import android.graphics.BitmapFactory.Options
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import java.io.InputStream
+import java.lang.Exception
 
 class AdapterPeliculas( var mCtx: Context, var resources:Int, var listaPeliculas: List<Pelicula>) : ArrayAdapter<Pelicula>(mCtx,resources, listaPeliculas) {
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {

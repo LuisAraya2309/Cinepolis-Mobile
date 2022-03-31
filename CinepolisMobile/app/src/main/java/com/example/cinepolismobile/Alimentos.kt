@@ -16,6 +16,7 @@ class Alimentos : AppCompatActivity() {
         val listaAlimentos = obtenerAlimentos()
 
         carteleraAlimentos!!.adapter = AdapterAlimentos(this,R.layout.list_item_alimentos,listaAlimentos)
+
     }
 
 
@@ -28,7 +29,7 @@ class Alimentos : AppCompatActivity() {
         val listaAlimentos = dataSet.use {
             generateSequence {
                 if (dataSet!!.next()){
-                    Alimento(dataSet.getString(1), dataSet.getString(2), dataSet.getInt(3), dataSet.getBinaryStream(4))
+                    Alimento(dataSet.getString(1), dataSet.getString(2), dataSet.getInt(3), dataSet.getBlob(4))
                 }  else{
                     null
                 }

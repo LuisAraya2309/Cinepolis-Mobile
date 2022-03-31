@@ -8,6 +8,7 @@ import android.widget.ImageView
 class Dashboardusuario : AppCompatActivity() {
 
     private var verCartelera : ImageView? = null
+    private var dulceria : ImageView? = null
     private var agregarMetodoPago : ImageView? = null
     private var carrito : ImageView? = null
 
@@ -34,6 +35,14 @@ class Dashboardusuario : AppCompatActivity() {
 
             val tarjetasAct : Intent = Intent(this,AgregarTarjeta::class.java)
             startActivity(tarjetasAct)
+        }
+
+        dulceria = findViewById(R.id.editar)
+        dulceria!!.setOnClickListener {
+
+            val DulceriaAct : Intent = Intent(this,Alimentos::class.java)
+            DulceriaAct.putExtra("idUsuario",idUsuario)
+            startActivity(DulceriaAct)
         }
 
         carrito = findViewById(R.id.carrito)

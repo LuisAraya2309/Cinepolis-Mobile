@@ -13,7 +13,7 @@
         android:src="@drawable/carritocompras" />
 
     <TextView
-        android:id="@+id/titulo_alimento"
+        android:id="@+id/titulo_pelicula"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -26,10 +26,10 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/precio"
+        android:id="@+id/director"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/titulo_alimento"
+        android:layout_below="@+id/titulo_pelicula"
         android:layout_marginLeft="30dp"
         android:layout_toRightOf="@+id/imagen__pelicula"
         android:fontFamily="@font/quicksand"
@@ -39,12 +39,12 @@
 
 
     <TextView
-        android:id="@+id/tipo"
+        android:id="@+id/año_publicacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/titulo_alimento"
+        android:layout_below="@+id/titulo_pelicula"
         android:layout_marginLeft="30dp"
-        android:layout_toRightOf="@+id/precio"
+        android:layout_toRightOf="@+id/director"
         android:fontFamily="@font/quicksand"
         android:gravity="center"
         android:text="2002"
@@ -54,9 +54,9 @@
         android:id="@+id/edad_permitida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/titulo_alimento"
+        android:layout_below="@+id/titulo_pelicula"
         android:layout_marginLeft="30dp"
-        android:layout_toRightOf="@+id/tipo"
+        android:layout_toRightOf="@+id/año_publicacion"
         android:fontFamily="@font/quicksand"
         android:gravity="center"
         android:text="TP18"
@@ -66,7 +66,7 @@
         android:id="@+id/idioma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/titulo_alimento"
+        android:layout_below="@+id/titulo_pelicula"
         android:layout_marginLeft="30dp"
         android:layout_toRightOf="@+id/edad_permitida"
         android:fontFamily="@font/quicksand"
