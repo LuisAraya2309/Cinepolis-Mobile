@@ -70,7 +70,7 @@
                         android:id="@+id/agregar"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/estrellacinepolis"
+                        android:src="@drawable/agregar"
                         app:srcCompat="@drawable/agregar" />
 
                     <TextView
@@ -108,7 +108,7 @@
                         android:id="@+id/editar"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/palomitas"
+                        android:src="@drawable/modificar"
                         app:srcCompat="@drawable/modificar" />
 
                     <TextView
@@ -146,7 +146,7 @@
                         android:id="@+id/eliminar"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/carritocompras"
+                        android:src="@drawable/resta"
                         app:srcCompat="@drawable/resta" />
 
                     <TextView
@@ -183,7 +183,7 @@
                         android:id="@+id/volver"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/tarjetas"
+                        android:src="@drawable/cerrarsesion"
                         app:srcCompat="@drawable/cerrarsesion" />
 
                     <TextView
