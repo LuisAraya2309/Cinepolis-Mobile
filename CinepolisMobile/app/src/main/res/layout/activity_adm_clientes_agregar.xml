@@ -141,7 +141,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/idSala"
+        android:id="@+id/inTituloBuscar"
         android:layout_width="96dp"
         android:layout_height="50dp"
         android:background="@drawable/text_rounded_border"

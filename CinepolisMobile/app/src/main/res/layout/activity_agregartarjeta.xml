@@ -59,7 +59,7 @@
             app:layout_constraintVertical_bias="0.967" />
 
         <EditText
-            android:id="@+id/idSala"
+            android:id="@+id/inTituloBuscar"
             android:layout_width="250dp"
             android:layout_height="48dp"
             android:background="@drawable/text_rounded_border"

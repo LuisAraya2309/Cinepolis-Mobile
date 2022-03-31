@@ -15,7 +15,7 @@ class ConexionBD {
     val ip = "10.0.2.2"
     val database = "CinepolisBD"
     val username = "sa"
-    val password = "admin"
+    val password = "sa"
 
     fun conectarDB():Connection?{
         val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()

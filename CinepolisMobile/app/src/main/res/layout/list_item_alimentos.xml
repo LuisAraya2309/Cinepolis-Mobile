@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/layout_item_cartelera"
+    android:id="@+id/layout_item_alimentos"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imagen__pelicula"
+        android:id="@+id/imagen_alimento"
         android:layout_width="80dp"
         android:layout_height="120dp"
         android:src="@drawable/carritocompras" />
@@ -19,66 +19,38 @@
         android:layout_gravity="center"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="25dp"
-        android:layout_toRightOf="@+id/imagen__pelicula"
+        android:layout_toRightOf="@+id/imagen_alimento"
         android:fontFamily="@font/quicksand"
-        android:text="Codigo davinci"
+        android:text="Titulo"
         android:textSize="22sp"
         android:textStyle="bold" />
+
 
     <TextView
         android:id="@+id/precio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/titulo_alimento"
-        android:layout_marginLeft="30dp"
-        android:layout_toRightOf="@+id/imagen__pelicula"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="24dp"
+        android:layout_toRightOf="@+id/imagen_alimento"
         android:fontFamily="@font/quicksand"
         android:gravity="center"
-        android:text="Dan Brown"
+        android:text="Precio"
         android:textSize="15dp" />
-
 
     <TextView
         android:id="@+id/tipo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/titulo_alimento"
-        android:layout_marginLeft="30dp"
+        android:layout_marginLeft="164dp"
+        android:layout_marginTop="-26dp"
         android:layout_toRightOf="@+id/precio"
         android:fontFamily="@font/quicksand"
         android:gravity="center"
-        android:text="2002"
+        android:text="Tipo"
         android:textSize="15dp" />
-
-    <TextView
-        android:id="@+id/edad_permitida"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/titulo_alimento"
-        android:layout_marginLeft="30dp"
-        android:layout_toRightOf="@+id/tipo"
-        android:fontFamily="@font/quicksand"
-        android:gravity="center"
-        android:text="TP18"
-        android:textSize="15dp" />
-
-    <TextView
-        android:id="@+id/idioma"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/titulo_alimento"
-        android:layout_marginLeft="30dp"
-        android:layout_toRightOf="@+id/edad_permitida"
-        android:fontFamily="@font/quicksand"
-        android:gravity="center"
-        android:text="Ingles"
-        android:textSize="15dp" />
-
-
-
-
-
-
 
 
 

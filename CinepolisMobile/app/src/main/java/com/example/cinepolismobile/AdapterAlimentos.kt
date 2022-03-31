@@ -8,29 +8,34 @@ import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
 
-class AdapterPeliculas( var mCtx: Context, var resources:Int, var listaPeliculas: List<Pelicula>) : ArrayAdapter<Pelicula>(mCtx,resources, listaPeliculas) {
+class AdapterAlimentos(var mCtx: Context, var resources:Int, var listaAlimentos: List<Alimento>) : ArrayAdapter<Alimento>(mCtx,resources, listaAlimentos) {
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val inflater : LayoutInflater = LayoutInflater.from(mCtx)
         val view : View = inflater.inflate(resources,null)
 
 
-        val titulo = view.findViewById<TextView>(R.id.titulo_pelicula)
-        val director = view.findViewById<TextView>(R.id.director)
-        val publicacion = view.findViewById<TextView>(R.id.año_publicacion)
+
+
+        val imagenAlimento = view.findViewById<ImageView>(R.id.imagen_alimento)
+        val titulo = view.findViewById<TextView>(R.id.titulo_alimento)
+        val director = view.findViewById<TextView>(R.id.precio)
+        val publicacion = view.findViewById<TextView>(R.id.tipo)
         val edad_permitida = view.findViewById<TextView>(R.id.edad_permitida)
         val idioma = view.findViewById<TextView>(R.id.idioma)
 
+        /*
+        try{
+            var streamBinario : InputStream? = listaPeliculas[position].imagen
+             var opciones  = Options()
+             opciones.inJustDecodeBounds = true
 
-        var blob = listaPeliculas[position].imagen
-        var imagenBinaria  = blob.getBytes(1, blob.length().toInt())
-        var opciones = Options()
-        var bitmap = BitmapFactory.decodeByteArray(imagenBinaria,0,imagenBinaria.size,opciones)
+            var imagenBinaria : Bitmap
+            imagenBinaria = BitmapFactory.decodeStream(streamBinario,null,opciones)!!
+        }catch(e:Exception){
 
-        //blob.free()
-        //imagenBinaria = null
-
-        val imagenPelicula = view.findViewById<ImageView>(R.id.imagen__pelicula)
-        imagenPelicula.setImageBitmap(bitmap)
+        }
+        */
+        imagenPelicula.setImageResource(R.drawable.jarvissd)
         titulo.text = listaPeliculas[position].titulo
         director.text = listaPeliculas[position].hora
         publicacion.text = listaPeliculas[position].añoPublicacion

@@ -50,6 +50,27 @@
         <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/item_cartelera.xml" value="0.15625" />
         <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/list_item_carrito.xml" value="0.20742753623188406" />
         <entry key="..\:/Users/luist/OneDrive/Escritorio/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/list_item_cartelera.xml" value="0.5" />
+        <entry key="..\:/Users/rolbi/Desktop/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_adm_agregar_cartelera.xml" value="0.35190217391304346" />
+        <entry key="..\:/Users/rolbi/Desktop/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_adm_alimentos.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/rolbi/Desktop/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_adm_alimentos_agregar.xml" value="0.35190217391304346" />
+        <entry key="..\:/Users/rolbi/Desktop/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_adm_clientes.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/rolbi/Desktop/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_adm_clientes_eliminar.xml" value="0.35190217391304346" />
+        <entry key="..\:/Users/rolbi/Desktop/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_adm_peliculas.xml" value="0.25" />
+        <entry key="..\:/Users/rolbi/Desktop/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_adm_peliculas_agregar.xml" value="0.35190217391304346" />
+        <entry key="..\:/Users/rolbi/Desktop/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_adm_peliculas_eliminar.xml" value="0.35190217391304346" />
+        <entry key="..\:/Users/rolbi/Desktop/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_adm_peliculas_modificar.xml" value="0.35190217391304346" />
+        <entry key="..\:/Users/rolbi/Desktop/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_agregartarjeta.xml" value="0.35190217391304346" />
+        <entry key="..\:/Users/rolbi/Desktop/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_alimentos.xml" value="0.35190217391304346" />
+        <entry key="..\:/Users/rolbi/Desktop/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_cartelera.xml" value="0.23233695652173914" />
+        <entry key="..\:/Users/rolbi/Desktop/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_dashboardadmin.xml" value="0.22" />
+        <entry key="..\:/Users/rolbi/Desktop/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_seleccion.xml" value="0.35190217391304346" />
+        <entry key="..\:/Users/rolbi/Desktop/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/activity_ventana_emergente.xml" value="0.35190217391304346" />
+        <entry key="..\:/Users/rolbi/Desktop/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/dashboardusuario.xml" value="0.23233695652173914" />
+        <entry key="..\:/Users/rolbi/Desktop/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/dropdown_item.xml" value="0.35190217391304346" />
+        <entry key="..\:/Users/rolbi/Desktop/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/list_item_alimento.xml" value="0.35190217391304346" />
+        <entry key="..\:/Users/rolbi/Desktop/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/list_item_alimentos.xml" value="0.35190217391304346" />
+        <entry key="..\:/Users/rolbi/Desktop/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/list_item_carrito.xml" value="0.35190217391304346" />
+        <entry key="..\:/Users/rolbi/Desktop/Cinepolis-Mobile/CinepolisMobile/app/src/main/res/layout/list_item_cartelera.xml" value="0.35190217391304346" />
         <entry key="app/src/main/res/drawable/border_buttom.xml" value="0.3125" />
         <entry key="app/src/main/res/drawable/border_top.xml" value="0.3125" />
         <entry key="app/src/main/res/drawable/buttonLogin.xml" value="0.3125" />

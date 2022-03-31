@@ -35,9 +35,9 @@ class AdmAlimentosModificar : AppCompatActivity(){
 
             val objConexion : Connection? = conexionBase.conectarDB()  //Crear el objeto conexion
 
-            val precio : Int = ((findViewById<View>(R.id.precio) as EditText).text.toString()).toInt()
+            val precio : Int = ((findViewById<View>(R.id.inDuracion) as EditText).text.toString()).toInt()
             val cantidad : Int = ((findViewById<View>(R.id.cantidad) as EditText).text.toString()).toInt()
-            val nombreViejo : String = (findViewById<View>(R.id.idSala) as EditText).text.toString()
+            val nombreViejo : String = (findViewById<View>(R.id.inTituloBuscar) as EditText).text.toString()
             val nombreNuevo : String = (findViewById<View>(R.id.nombreNuevo) as EditText).text.toString()
             val tipoAlimento: Int = (findViewById<View>(R.id.tiposAlimentos) as Spinner).selectedItemPosition + 1
             contexto = this@AdmAlimentosModificar

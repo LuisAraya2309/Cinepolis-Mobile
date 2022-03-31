@@ -35,7 +35,7 @@ class AdmAgregarCartelera : AppCompatActivity() {
                 calendario.get(Calendar.DAY_OF_MONTH)).show()
         }
         botonAgregarCartelera.setOnClickListener {
-            val idSala = (findViewById<EditText>(R.id.idSala) as EditText).text.toString().toInt()
+            val idSala = (findViewById<EditText>(R.id.inTituloBuscar) as EditText).text.toString().toInt()
             val idPelicula = (findViewById<EditText>(R.id.idPelicula) as EditText).text.toString().toInt()
             val hora = (findViewById<EditText>(R.id.horaFuncion) as EditText).text.toString()
             val asientosOcupados = (findViewById<EditText>(R.id.asientosOcupados) as EditText).text.toString()

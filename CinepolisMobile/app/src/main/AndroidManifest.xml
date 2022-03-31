@@ -16,6 +16,24 @@
         android:theme="@style/Theme.CinepolisMobile"
         android:requestLegacyExternalStorage="true">
         <activity
+            android:name=".Alimentos"
+            android:exported="false" />
+        <activity
+            android:name=".AdmPeliculasEliminar"
+            android:exported="false" />
+        <activity
+            android:name=".AdmPeliculasModificar"
+            android:exported="false" />
+        <activity
+            android:name=".AdmPeliculasAgregar"
+            android:exported="false" />
+        <activity
+            android:name=".AdmPeliculas"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboardadmin"
+            android:exported="false" />
+        <activity
             android:name=".AdmEditarCartelera"
             android:exported="false" />
         <activity
@@ -42,7 +60,7 @@
         <activity
             android:name=".VentanaEmergente"
             android:exported="false"
-            android:theme="@style/Theme.VentanaEmergente"/>
+            android:theme="@style/Theme.VentanaEmergente" />
         <activity
             android:name=".Dashboardusuario"
             android:exported="false" />
@@ -51,7 +69,7 @@
             android:exported="false" />
         <activity
             android:name=".AdmAlimentos"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".AdmAlimentosAgregar"
             android:exported="true" />
@@ -63,7 +81,7 @@
             android:exported="true" />
         <activity
             android:name=".AdmClientes"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".AdmClientesAgregar"
             android:exported="true" />

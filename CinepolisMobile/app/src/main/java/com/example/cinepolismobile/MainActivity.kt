@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
 
         //Funcion del boton de iniciar sesion
         iniciarSesion!!.setOnClickListener{
+
             //Instanciar el objeto conexion
             val objConexion : Connection? = conexionBase.conectarDB()  //Crear el objeto conexion
 
@@ -69,7 +70,7 @@ class MainActivity : AppCompatActivity() {
                     dashboardPrincipal.putExtra("idUsuario",obtenerIdCliente(emailUsuario,passwordUsuario))
                     startActivity(dashboardPrincipal)
                 }else{
-                    val dashboardAdmin : Intent = Intent(this,AdmClientes::class.java)
+                    val dashboardAdmin : Intent = Intent(this,Dashboardadmin::class.java)
                     startActivity(dashboardAdmin)
                 }
 
@@ -77,6 +78,7 @@ class MainActivity : AppCompatActivity() {
             else{
                 Toast.makeText(this,"Credenciales incorrectas",Toast.LENGTH_LONG).show()
             }
+
 
             //Cerrar la conexion
             objConexion?.close()

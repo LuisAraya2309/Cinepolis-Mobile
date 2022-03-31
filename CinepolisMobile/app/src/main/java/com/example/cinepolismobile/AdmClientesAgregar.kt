@@ -53,7 +53,7 @@ class AdmClientesAgregar : AppCompatActivity() {
 
             //Obtener los campos necesarios para el procesamiento de datos con su id en XML
             val correoUsuario : String = (findViewById<View>(R.id.asientosOcupados) as EditText).text.toString()
-            val nombreUsuario : String = (findViewById<View>(R.id.idSala) as EditText).text.toString()
+            val nombreUsuario : String = (findViewById<View>(R.id.inTituloBuscar) as EditText).text.toString()
             val apellido1Usuario : String = (findViewById<View>(R.id.idPelicula) as EditText).text.toString()
             val apellido2Usuario : String = (findViewById<View>(R.id.horaFuncion) as EditText).text.toString()
             val identificacionUsuario : Int = ((findViewById<View>(R.id.identificacion) as EditText).text.toString()).toInt()
